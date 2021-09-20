@@ -3,7 +3,7 @@ const body = document.querySelector("body");
 const nav = document.createElement("nav");
 nav.innerHTML = ` <nav class='navbar navbar-expand-xl'>
 <div class="container">
-    <a href="../index.html" class="navbar-brand"><img src="images/logo.svg" alt="logo"></a>
+    <a href="./index.html" class="navbar-brand"><img src="images/logo.svg" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" >
         <i class="fas fa-bars"></i>
     </button>
@@ -11,7 +11,7 @@ nav.innerHTML = ` <nav class='navbar navbar-expand-xl'>
         <ul class="navbar-nav text-center">
             <li class="nav-item"><a href="#" class="nav-link">من نحن</a></li>
             <li class="nav-item"><a href="#" class="nav-link">اتصل بنا</a></li>
-            <li class="nav-item"><a href="../store.html" class="nav-link">المتجر</a></li>
+            <li class="nav-item"><a href="./store.html" class="nav-link">المتجر</a></li>
             <li class="nav-item"><a href="#" class="nav-link">الحلول</a></li>
         </ul>
         <form class="d-flex nav-search text-center">
