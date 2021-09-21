@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Al-Jazeera-Arabic", sans-serif;
 }
-input:focus {
+input:focus , select:focus  , textarea:focus{
   outline: none;
   box-shadow: none !important;
 }
@@ -1526,8 +1526,577 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 
 
-
-
-
-
 /* =========================== End store page ====================== */
+
+
+/* ========================== Start about us page =================== */
+/* Start about us hero */
+.about-us-hero{
+  background-image: url('../images/about_us_hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 364px;
+  border-radius: 0 0 30px 30px;
+  text-align: center;
+}
+
+.about-us-hero p.h2{
+  font-size: 30px;
+  font-weight: bold;
+  color:#FFF
+}
+
+.about-us-hero p.h6{
+  font-size: 19px;
+  line-height: 26px;
+  color:#FFF;
+  margin-top: 30px;
+}
+
+/* End about us hero */
+
+
+/* Start slider */
+
+.our-partners{
+  margin-top: 100px;
+  position: relative;
+}
+
+.our-partners p.h2{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+ 
+}
+
+.swiper {
+  width: 100%;
+  height: 250px;
+  
+  
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:grab;
+  height: 186px !important;
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+  display: none;
+}
+
+
+.swiper-button-next, .swiper-button-prev{
+  font-size: 40px !important;
+  color: #0e2978 !important;
+}
+
+.swiper-button-next{
+  left:80px !important;
+  top:55% !important
+}
+
+.swiper-button-prev{
+  right:80px !important;
+  top:55% !important
+}
+/* End slider */
+
+/* Start our services */
+
+
+.our-services p.h2{
+  margin-bottom: 76px;
+  font-weight: bold;
+}
+
+.our-services-box{
+  box-shadow: 0 5px 15px rgba(0,0,0,8%);
+  border-radius: 24px;
+  height: 361px;
+  text-align: center;
+  padding:7px;
+  margin-bottom: 50px;
+}
+
+.our-services-box img{
+  max-width: 100%;
+}
+
+.our-services-box p{
+  margin-top: 22px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.our-services-box span{
+  margin-top: 10px;
+  font-size: 17px;
+  line-height: 25px;
+}
+/* End our services */
+
+
+/* Start our clients */
+
+.our-clients{
+  margin-top: 50px;
+  position: relative;
+}
+.our-clients p.h2{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.clients-slider{
+  height: 209px;
+}
+
+
+
+.clients-slider .swiper-slide{
+  border-radius: 19px;
+  border:1px solid #D6D6D6;
+  border-top:18px solid #0e2978;
+}
+
+.clients-slider .swiper-slide img{
+  width: auto !important;
+  height: auto !important;
+  
+}
+
+.clients-button-next,.clients-button-prev{
+  top:63% !important; 
+  
+}
+
+.clients-button-next{
+  left:50px !important
+}
+
+.clients-button-prev{
+  right:50px !important;
+}
+
+/* End our clients */
+
+
+
+/* ========================== End about us page   =================== */
+
+
+
+
+/* ======================== Start complete but page ================= */
+.complete-buy-hero{
+  margin-top: 50px;
+  text-align: center;
+  color:#0e2978
+}
+
+
+.complete-buy-hero img{
+  max-width: 100%;
+}
+
+.complete-buy-hero p.h2{
+  font-size: 27px;
+  font-weight: bold;
+  margin-top: 35px;
+ 
+}
+
+
+.complete-buy-hero p.h4{
+  font-size: 22px;
+  font-weight: bold;
+  
+}
+
+.complete-buy-hero span{
+  margin-top: 15px;
+  font-size: 18px;
+  color:#000;
+  display: block;
+
+}
+
+
+.complete-buy-hero a{
+  width: 190px;
+  max-width: 90%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#0e2978;
+  font-size: 17px;
+  border:1px solid #0e2978;
+  border-radius: 8px;
+  margin:35px auto;
+}
+
+/* ======================== End complete but page ================= */
+
+
+/* ===================== Start delete product page ======================*/
+
+.delete-product{
+  margin-top: 100px;
+}
+
+.delete-product-box{
+  width: 454px;
+  max-width: 100%;
+  height: 225px;
+  box-shadow:0 3px 15px rgba(0, 0, 0, 10%);
+  margin:auto;
+  text-align: center;
+  padding-top: 45px;
+  border-radius: 26px;
+}
+
+.delete-product-box p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.delete-product-box span{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.delete-product-box div{
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+ 
+}
+
+.delete-product-box div a{
+  width: 140px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+
+.delete-product-box div a:first-of-type{
+  color:#B6B6B6;
+  border:1px solid #B6B6B6;
+  margin-left: 4px;
+}
+
+.delete-product-box div a:last-of-type{
+  background-color:#FF3838 ;
+  color:#fff;
+  margin-right: 4px;
+}
+
+/* ===================== End delete product page ======================*/
+
+
+
+/* ==================== Start contact us page ============================== */
+/* Start contact us hero */
+.contact-us-hero{
+  text-align: center;
+  background-image: url('../images/contact_us_hero.png');
+  height: 221px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.contact-us-hero img{
+  margin-top: 40px;
+}
+
+.contact-us-hero p{
+  font-size: 25px;
+  font-weight: bold;
+  color:#fff;
+  margin-top: 17px;
+}
+/* End contact us hero */
+
+
+/* Start contact details */
+.contact-us-details{
+  margin-top: 70px;
+  min-height: 400px;
+
+}
+
+.contact-details-map{
+  min-height: 400px;
+  height: 400px;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.contact-details-info{
+  height: 400px;
+  min-height: 400px;
+  border:1px solid #D5D5D5;
+  border-radius: 11px;
+  padding-right: 30px;
+  padding-top: 25px;
+}
+
+
+.contact-details-info p{
+  font-weight: bold;
+  font-size: 20px;
+  color:#0e2978
+}
+
+.contact-addresses li{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 11px;
+  
+}
+
+.contact-addresses li span:first-of-type{
+  color:#0e2978;
+  font-weight: bold;
+}
+
+.contact-addresses li span:last-of-type{
+  margin-left: 19px;
+  font-size: 14px;
+}
+
+.contact-addresses li i{
+  margin-left: 14px;
+  font-size: 14px;
+}
+
+.emails-info{
+  padding-left: 30px;
+}
+
+.emails-info p{
+  font-size: 16px;
+  color:#000;
+  margin-top: 20px;
+}
+
+
+.emails-info li{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 11px;
+}
+
+.emails-info li span:first-of-type{
+  color:#0e2978;
+  font-weight: bold;
+}
+
+.emails-info li span:first-of-type i{
+  margin-left: 14px;
+}
+
+
+@media(max-width:998.98px){
+  .contact-details-info{
+    margin-top: 50px;
+  }
+}
+
+
+/* End contact details */
+
+
+/* Start send message */
+.send-message-box{
+  margin-top: 40px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 10%);
+  border-radius: 11px;
+  min-height: 700px;
+  padding-top:25px;
+  padding-right: 35px;
+}
+
+.form-row{
+  display: flex;
+  margin-bottom: 7px;
+  
+}
+
+.input-field{
+  width: 250px;
+  max-width: 95%;
+} 
+
+.input-field:first-of-type{
+  margin-left: 15px;
+
+}
+
+.input-field label , .input-field input{
+  display: block;
+  width: 100%;
+}
+
+.send-message-box label{
+  margin-bottom: 14px;
+}
+
+.input-field input {
+  border:1px solid #C2C2C2;
+  border-radius: 10px;
+  height: 35px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+.input-field select{
+  width: 100%;
+  border:1px solid #C2C2C2;
+  border-radius: 10px;
+  height: 35px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image:url("../images/send_message_icon_select.svg");
+  background-repeat: no-repeat;
+  background-position: 23px 50%;
+  padding-right: 23px;
+  color:#0e2978
+}
+
+
+.input-field input[type='file']{
+  display: none;
+} 
+
+.custom-input-field{
+  border:1px solid #C2C2C2;
+  border-radius: 10px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.custom-input-field span:first-of-type{
+  font-size: 14px;
+  padding-right: 10px;
+  direction: ltr;
+  max-width: 90%;
+  overflow: hidden;
+}
+
+.custom-input-field span:last-of-type{
+  background-color: #0e2978;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.send-message-box textarea{
+  display: block;
+  width: 512px;
+  max-width: 95%;
+  border:1px solid #c2c2c2;
+  border-radius: 11px;
+  min-height: 152px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.send-message-box input[type='submit']{
+  background-color: #0e2978;
+  color:#FFF;
+  text-align: center;
+  font-size: 17px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:514px ;
+  height: 35px;
+  max-width: 95%;
+  border:0;
+  border-radius: 10px;
+  margin-top: 18px;
+  margin-bottom: 40px;
+}
+
+
+
+.send-message-box-image img{
+  width:100%;
+  max-width: 100%;
+
+}
+
+
+@media (max-width:998.98px){
+  .send-message-box{
+    padding:0;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .form-row{
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .input-field{
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+  }
+
+  .input-field:first-of-type{
+    margin-left: auto;
+  }
+
+  .send-message-box textarea{
+    margin:14px auto;
+    width: 95%;
+  }
+}
+
+/* End send message */
+
+
+
+/* ==================== End contact us page ================================= */
+
