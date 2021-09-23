@@ -82,190 +82,195 @@
     <!-- Start result filter -->
     <section class="result-filter">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-12">
+            <div class="row p-0">
+                <div class="col-lg-3 col-12 p-0">
                     <div class="result-filter-panel">
-                        <div class="result-panel-title">
+                        <div class="result-panel-title ">
                             تصفية النتائج
                         </div>
-                        <div class="filter-box ">
-                            <span>الماركة</span>
-                            <i class='far fa-minus-square'></i>
-                            <form action="">
-                                <ul>
-                                    <li>
-                                        <input type="checkbox" name="" id="ICOM">
-                                        <label for="ICOM">ICOM</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="Motorola">
-                                        <label for="Motorola">Motorola</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="Boafeing">
-                                        <label for="Boafeing">Boafeing</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="Kenwood">
-                                        <label for="Kenwood">Kenwood</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="TYT">
-                                        <label for="TYT">TYT</label>
-                                    </li>
-                                </ul>
-                            </form>
-                        </div>
-                        <div class="filter-box">
-                            <div class="container-range">
-                                <div class="slider-track"></div>
-                                <input type="range" min="1000" max="10000" value="0" id="slider-1" oninput="slideOne()">
-                                <input type="range" min="1000" max="10000" value="10000" id="slider-2" oninput="slideTwo()">
+                        <div class="filter-box-lists" >
+                            <div class="close-list-mobile d-lg-none d-block"><i class="fas fa-angle-double-right"></i></div>
+                            <div class="filter-box">
+                                <span>الماركة</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="" id="ICOM">
+                                            <label for="ICOM">ICOM</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">Motorola</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Boafeing">
+                                            <label for="Boafeing">Boafeing</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Kenwood">
+                                            <label for="Kenwood">Kenwood</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="TYT">
+                                            <label for="TYT">TYT</label>
+                                        </li>
+                                    </ul>
+                                </form>
                             </div>
-                            <div class="values d-flex justify-content-between">
-                                <span id="range1">
-                                    0 
-                                </span>
-                                <span id="range2">
-                                    100 
-                                </span>
+                            <div class="filter-box">
+                                <div class="container-range">
+                                    <div class="slider-track"></div>
+                                    <input type="range" min="1000" max="10000" value="0" id="slider-1"
+                                        oninput="slideOne()">
+                                    <input type="range" min="1000" max="10000" value="10000" id="slider-2"
+                                        oninput="slideTwo()">
+                                </div>
+                                <div class="values d-flex justify-content-between">
+                                    <span id="range1">
+                                        0
+                                    </span>
+                                    <span id="range2">
+                                        100
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="filter-box">
-                            <span>فرز حسب</span>
-                            <i class='far fa-minus-square'></i>
-                            <form action="">
-                                <ul>
-                                    <li>
-                                        <input type="checkbox" name="" id="ICOM">
-                                        <label for="ICOM">السعر تصاعديا</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="Motorola">
-                                        <label for="Motorola">السعر تنازليا</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="Boafeing">
-                                        <label for="Boafeing">أحدث المنتجات</label>
-                                    </li>
 
-                                </ul>
-                            </form>
-                        </div>
-                        <div class="filter-box">
-                            <span>لوحة المفاتيح</span>
-                            <i class='far fa-minus-square'></i>
-                            <form action="">
-                                <ul>
-                                    <li>
-                                        <input type="checkbox" name="" id="ICOM">
-                                        <label for="ICOM">NON</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="Motorola">
-                                        <label for="Motorola">Full</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="Boafeing">
-                                        <label for="Boafeing">Limit</label>
-                                    </li>
-                                </ul>
-                            </form>
-                        </div>
-                        <div class="filter-box">
-                            <span>التكرار</span>
-                            <i class='far fa-minus-square'></i>
-                            <form action="">
-                                <ul>
-                                    <li>
-                                        <input type="checkbox" name="" id="ICOM">
-                                        <label for="ICOM">VHF</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="Motorola">
-                                        <label for="Motorola">UHF</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="Boafeing">
-                                        <label for="Boafeing">VHF OR UHF</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="Boafeing">
-                                        <label for="Boafeing">Dual band</label>
-                                    </li>
-                                </ul>
-                            </form>
-                        </div>
-                        <div class="filter-box">
-                            <span>القنوات</span>
-                            <i class='far fa-minus-square'></i>
-                            <form action="">
-                                <ul>
-                                    <li>
-                                        <input type="checkbox" name="" id="ICOM">
-                                        <label for="ICOM">128</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="Motorola">
-                                        <label for="Motorola">16</label>
-                                    </li>
+                            <div class="filter-box">
+                                <span>فرز حسب</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="" id="ICOM">
+                                            <label for="ICOM">السعر تصاعديا</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">السعر تنازليا</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Boafeing">
+                                            <label for="Boafeing">أحدث المنتجات</label>
+                                        </li>
 
-                                </ul>
-                            </form>
-                        </div>
-                        <div class="filter-box">
-                            <span>البروتوكول</span>
-                            <i class='far fa-minus-square'></i>
-                            <form action="">
-                                <ul>
-                                    <li>
-                                        <input type="checkbox" name="" id="ICOM">
-                                        <label for="ICOM">Analog</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="Motorola">
-                                        <label for="Motorola">Digital</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="Motorola">
-                                        <label for="Motorola">Digital Analog</label>
-                                    </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="filter-box">
+                                <span>لوحة المفاتيح</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="" id="ICOM">
+                                            <label for="ICOM">NON</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">Full</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Boafeing">
+                                            <label for="Boafeing">Limit</label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="filter-box">
+                                <span>التكرار</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="" id="ICOM">
+                                            <label for="ICOM">VHF</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">UHF</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Boafeing">
+                                            <label for="Boafeing">VHF OR UHF</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Boafeing">
+                                            <label for="Boafeing">Dual band</label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="filter-box">
+                                <span>القنوات</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="" id="ICOM">
+                                            <label for="ICOM">128</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">16</label>
+                                        </li>
 
-                                </ul>
-                            </form>
-                        </div>
-                        <div class="filter-box">
-                            <span>VOX</span>
-                            <i class='far fa-minus-square'></i>
-                            <form action="">
-                                <ul>
-                                    <li>
-                                        <input type="checkbox" name="vox" id="ICOM">
-                                        <label for="ICOM">Yes</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="vox" id="Motorola">
-                                        <label for="Motorola">No</label>
-                                    </li>
-                                </ul>
-                            </form>
-                        </div>
-                        <div class="filter-box">
-                            <span>إرسال الإشارات</span>
-                            <i class='far fa-minus-square'></i>
-                            <form action="">
-                                <ul>
-                                    <li>
-                                        <input type="checkbox" name="vox" id="ICOM">
-                                        <label for="ICOM">Simplex / Semi-Duplex</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="vox" id="Motorola">
-                                        <label for="Motorola">MDC </label>
-                                    </li>
-                                </ul>
-                            </form>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="filter-box">
+                                <span>البروتوكول</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="" id="ICOM">
+                                            <label for="ICOM">Analog</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">Digital</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">Digital Analog</label>
+                                        </li>
+
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="filter-box">
+                                <span>VOX</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="vox" id="ICOM">
+                                            <label for="ICOM">Yes</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="vox" id="Motorola">
+                                            <label for="Motorola">No</label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="filter-box">
+                                <span>إرسال الإشارات</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="vox" id="ICOM">
+                                            <label for="ICOM">Simplex / Semi-Duplex</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="vox" id="Motorola">
+                                            <label for="Motorola">MDC </label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -453,7 +458,7 @@
 
 
 
-    
+
 
 
 
@@ -485,19 +490,19 @@
             if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
                 sliderOne.value = parseInt(sliderTwo.value) - minGap;
             }
-            displayValOne.textContent =  "ج" + " " + sliderOne.value  ;
+            displayValOne.textContent = "ج" + " " + sliderOne.value;
             fillColor();
         }
         function slideTwo() {
             if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
                 sliderTwo.value = parseInt(sliderOne.value) + minGap;
             }
-            displayValTwo.textContent =  "ج" + " " +  sliderTwo.value   ;
+            displayValTwo.textContent = "ج" + " " + sliderTwo.value;
             fillColor();
         }
         function fillColor() {
-            percent1 = (sliderOne.value / sliderMaxValue) * 100 ;
-            percent2 = (sliderTwo.value / sliderMaxValue) * 100 ;
+            percent1 = (sliderOne.value / sliderMaxValue) * 100;
+            percent2 = (sliderTwo.value / sliderMaxValue) * 100;
             sliderTrack.style.background = `linear-gradient(to left, #dadae5 ${percent1}% , #0e2978 ${percent1}% , #0e2978 ${percent2}%, #dadae5 ${percent2}%)`;
         }
 
@@ -544,6 +549,31 @@
             }
 
         })
+
+        if($(window).width() <= 998){
+            const lists_width = "-" + $(".filter-box-lists").width();
+            $(".filter-box-lists").css("right", lists_width + "px")
+
+            $(".result-panel-title").click(function () {
+                $(".filter-box-lists").animate({
+                    "right": "0",
+                }, 500)
+                $(".filter-box-lists").css({
+                    "display": "block",
+                })
+                $("body").css("overflow-y",'hidden')
+            })
+
+            $('.close-list-mobile').click(function(){
+                $(".filter-box-lists").animate({
+                    "right": lists_width,
+                }, 500)
+                $("body").css("overflow-y",'auto')
+                
+            })
+        }
+        
+
 
 
 

@@ -1254,6 +1254,8 @@ a {
       display: block;
   }
 }
+
+
 /* End store filter */
 
 /* Start filter result */
@@ -1416,25 +1418,18 @@ a {
   border-radius: 25px;
 }
 
-@media(max-width: 998.98px){
-  .product-box{
-    width:70%;
-    max-width: 70%;
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
 
-  }
-
-  .product-box-details{
-    justify-content: space-between;
-  }
-}
 
 /* End  filter result  */
 
 
-
+.wrapper{
+  position: relative;
+  width: 95vmin;
+  background-color: #ffffff;
+  padding: 50px 40px 20px 40px;
+  border-radius: 10px;
+}
 .container-range{
   position: relative;
   width: 100%;
@@ -1489,8 +1484,8 @@ input[type="range"]::-webkit-slider-thumb{
 }
 input[type="range"]::-moz-range-thumb{
   -webkit-appearance: none;
-  height: 22px;
-  width: 22px;
+  height: 18px;
+  width: 18px;
   cursor: pointer;
   border-radius: 50%;
   background-color: #0e2978;
@@ -1498,8 +1493,8 @@ input[type="range"]::-moz-range-thumb{
 }
 input[type="range"]::-ms-thumb{
   appearance: none;
-  height: 22px;
-  width: 22px;
+  height: 1.7em;
+  width: 1.7em;
   cursor: pointer;
   border-radius: 50%;
   background-color: #0e2978;
@@ -1508,7 +1503,6 @@ input[type="range"]::-ms-thumb{
 input[type="range"]:active::-webkit-slider-thumb{
   background-color: #ffffff;
   border: 3px solid #0e2978;
-  width: 100%;
 }
 .values{
   width: 100%;
@@ -1521,6 +1515,53 @@ input[type="range"]:active::-webkit-slider-thumb{
   font-size: 25px;
   color: #000;
 }
+
+
+@media(max-width: 998.98px){
+  .product-box{
+    width:70%;
+    max-width: 70%;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+  .product-box-details{
+    justify-content: space-between;
+  }
+  
+  .filter-box-lists{
+    position: fixed;
+    top:0;
+    display: none;
+    width:100%;
+    overflow-y: auto;
+    background-color: #fff;
+    z-index: 3333;
+    padding-top:30px;
+    height: 100vh;
+  }
+
+  .close-list-mobile{
+    position: absolute;
+    top: 15px;
+    right:25px;
+    font-size: 20px;
+    color:#0e2978;
+    
+  }
+  
+  .result-filter-panel{
+    border:0 
+  }
+
+  .filter-box:nth-of-type(2){
+    margin-top: 30px;
+  }
+
+}
+
 
 
 
@@ -2099,4 +2140,184 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 
 /* ==================== End contact us page ================================= */
+
+
+
+
+/* ==================== Start return policy page ========================= */
+/* Start shipping */
+.shipping{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.shipping-title{
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 40px;
+  border:1px solid #0e2978;
+  width: 240px;
+  height: 60px;
+  align-items: center;
+
+}
+
+.shipping-title img{
+  margin-left: 22px;
+}
+
+.shipping-title p.h2{
+  font-size: 19px;
+  font-weight: bold;
+  color:#0e2978;
+  margin:0;
+
+}
+
+.shipping-text{
+  font-size: 19px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 35px;
+}
+
+/* End shipping */
+
+
+/* Start return replace */
+.replace-return{
+  margin-top: 55px;
+  text-align: center;
+}
+
+.replace-return-title{
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 40px;
+  border:1px solid #0e2978;
+  width: 240px;
+  height: 60px;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.replace-return-title img{
+  margin-left: 22px;
+}
+
+.replace-return-title p{
+  font-size: 19px;
+  font-weight: bold;
+  color:#0e2978;
+  margin: 0;
+}
+
+.replace-return-item{
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.replace-return-item > span{
+  min-width: 43px;
+  min-height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0e2978;
+  color:#fff;
+  border-radius: 10px;
+  margin-left: 22px;
+}
+
+.replace-return-item p{
+  margin:0;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.more-replace-conditions{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.replace-return-item p a ,  .replace-return-item  p span{
+  color: #0e2978;
+  font-weight: bold;
+}
+
+/* End return replace */
+
+
+
+
+/* ==================== End return policy page ========================= */
+
+
+
+/* ====================== Start new user page ========================== */
+.new-user{
+
+}
+
+.new-user-box{
+  width: 975px;
+  max-width: 100%;
+  height: 493px;
+  min-height: 493px;
+  border-radius: 13px;
+  border:1px solid #DDDDDD;
+  margin:70px auto;
+  text-align: center;
+}
+
+.new-user-box p.h4{
+  color:#0e2978;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 38px;
+  margin-bottom: 33px;
+}
+
+.new-user-box input{
+  display: block;
+  width: 598px;
+  max-width: 95%;
+  height: 44px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  border-radius: 22px;
+  border:1px solid #C3C3C3;
+  padding-right: 32px;
+  padding-left: 32px;
+  direction: rtl;
+  font-size: 16px;
+  color:#C3C3C3;
+}
+
+
+.new-user-box input[type='submit']{
+  background-color: #0e2978;
+  color:#fff;
+  margin-top: 42px;
+  font-size: 19px;
+}
+
+.new-user-box div{
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin-top: 17px;
+}
+
+.new-user-box div a{
+  color:#0e2978;
+  margin-right: 10px;
+}
+
+/* ====================== End new user page ========================== */
+
 
