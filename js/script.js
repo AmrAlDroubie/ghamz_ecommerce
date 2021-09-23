@@ -3,7 +3,7 @@ const body = document.querySelector("body");
 const nav = document.createElement("nav");
 nav.innerHTML = ` <nav class='navbar navbar-expand-xl'>
 <div class="container">
-    <a href="../index.html" class="navbar-brand"><img src="images/logo.svg" alt="logo"></a>
+    <a href="./index.html" class="navbar-brand"><img src="images/logo.svg" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" >
         <i class="fas fa-bars"></i>
     </button>
