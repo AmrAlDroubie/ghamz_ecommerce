@@ -11,7 +11,7 @@ nav.innerHTML = ` <nav class='navbar navbar-expand-xl'>
         <ul class="navbar-nav text-center align-items-center">
             <li class="nav-item"><a href="#" class="nav-link">من نحن</a></li>
             <li class="nav-item"><a href="#" class="nav-link">اتصل بنا</a></li>
-            <li class="nav-item"><a href="../store.html" class="nav-link">المتجر</a></li>
+            <li class="nav-item"><a href="./store.html" class="nav-link">المتجر</a></li>
             <li class="nav-item"><a href="#" class="nav-link">الحلول</a></li>
         </ul>
         <form class="d-flex nav-search text-center">
@@ -22,7 +22,7 @@ nav.innerHTML = ` <nav class='navbar navbar-expand-xl'>
 
             <li class="nav-item"><a href="#" class="nav-link nav-lang">En</a></li> 
             <li class="nav-item"><a href="#" class="nav-link">تسجيل الدخول</a></li> 
-            <li class="nav-item"><a href="#" class="nav-link new-user">مستخدم جديد</a></li> 
+            <li class="nav-item"><a href="./newuser.html" class="nav-link new-user">مستخدم جديد</a></li> 
             <div class='d-flex my-3'>
                 <li class="nav-item w-50"><a href="#" class="nav-link nav-icon"><i class="far fa-shopping-bag"></i></a></li> 
                 <li class="nav-item w-50"><a href="#" class="nav-link nav-icon"><i class="fas fa-shopping-cart"></i></a></li> 
