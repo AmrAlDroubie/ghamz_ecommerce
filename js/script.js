@@ -3,27 +3,31 @@ const body = document.querySelector("body");
 const nav = document.createElement("nav");
 nav.innerHTML = ` <nav class='navbar navbar-expand-xl'>
 <div class="container">
-    <a href="./index.html" class="navbar-brand"><img src="images/logo.svg" alt="logo"></a>
+    <a href="../index.html" class="navbar-brand"><img src="images/logo.svg" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" >
         <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbar">
-        <ul class="navbar-nav text-center">
+        <ul class="navbar-nav text-center align-items-center">
             <li class="nav-item"><a href="#" class="nav-link">من نحن</a></li>
             <li class="nav-item"><a href="#" class="nav-link">اتصل بنا</a></li>
-            <li class="nav-item"><a href="./store.html" class="nav-link">المتجر</a></li>
+            <li class="nav-item"><a href="../store.html" class="nav-link">المتجر</a></li>
             <li class="nav-item"><a href="#" class="nav-link">الحلول</a></li>
         </ul>
         <form class="d-flex nav-search text-center">
             <button type="submit"><i class="fas fa-search"></i></button>
             <input class="form-control me-2" type="search" placeholder="ابحث عن طلبك" aria-label="Search">
         </form>
-        <ul class='navbar-nav ms-auto text-center'>
+        <ul class='navbar-nav ms-auto text-center align-items-xl-center'>
+
             <li class="nav-item"><a href="#" class="nav-link nav-lang">En</a></li> 
             <li class="nav-item"><a href="#" class="nav-link">تسجيل الدخول</a></li> 
             <li class="nav-item"><a href="#" class="nav-link new-user">مستخدم جديد</a></li> 
-            <li class="nav-item"><a href="#" class="nav-link nav-icon"><i class="far fa-shopping-bag"></i></a></li> 
-            <li class="nav-item"><a href="#" class="nav-link nav-icon"><i class="fas fa-shopping-cart"></i></a></li> 
+            <div class='d-flex my-3'>
+                <li class="nav-item w-50"><a href="#" class="nav-link nav-icon"><i class="far fa-shopping-bag"></i></a></li> 
+                <li class="nav-item w-50"><a href="#" class="nav-link nav-icon"><i class="fas fa-shopping-cart"></i></a></li> 
+            </div>
+           
         </ul>
        
     </div>    
