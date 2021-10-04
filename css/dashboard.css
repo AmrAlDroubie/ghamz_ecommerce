@@ -22,7 +22,7 @@ html {
 }
 body {
   overflow-x: hidden !important;
-  height: 3000px;
+  min-height: 3000px;
 }
 
 a {
@@ -33,11 +33,19 @@ a {
 
 .m-color {
   color: #0e2978;
+  
+}
+.rotate-90{
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
 }
 
 /* ====================== Start dashboard ====================== */
 .dashboard-body {
-  background-color: #f9f9f9;
+  background-color: #f4f5f7;
 }
 .dashboard {
   min-height: 100vh;
@@ -46,12 +54,14 @@ a {
 
 .dashboard-right {
   background-color: #2f49d1;
-  min-height: 100vh;
+  min-height: 100%;
   padding-right: 20px;
   padding-left: 20px;
   position: fixed;
   top: 0;
   right: 0;
+  left:0;
+
 }
 
 .dashboard-logo img {
@@ -110,7 +120,7 @@ a {
 
 /* left dashboard */
 .dashboard-left {
-  background-color: #f9f9f9;
+  background-color: #f4f5f7;
   border-radius: 0 28px 28px 0;
   -webkit-border-radius: 0 28px 28px 0;
   -moz-border-radius: 0 28px 28px 0;
@@ -523,6 +533,7 @@ a {
 /* Responsive */
 
 @media(max-width:992.98px){
+  
   .dashboard-right{
    z-index: 9999
   }
@@ -536,13 +547,24 @@ a {
   }
   .dash-latest-products-box{
     margin-top: 35px;
+    min-height: 221px; 
+    height: auto;
   }
+
+  .dash-product-box-brand{
+    flex-direction: column;
+  }
+
+  .dash-product-box-brand a{
+    width:90%;
+    margin:10px auto
+  }
+
   .dash-all-orders{
     margin:40px auto;
   }
   .dashboard-right{
     position: fixed;
-    right:-67%;
     transition:  0.5s , ;
     -webkit-transition:  0.5s , ;
     -moz-transition:  0.5s , ;
@@ -562,6 +584,7 @@ a {
 
   .dashboard-left{
     position: static;
+    padding-right: calc(1.5rem / 2);
   }
 
   .open-menu{
@@ -585,13 +608,25 @@ a {
 }
   .trend-box{
     margin-bottom: 40px;
+    height: auto;
+    min-height: 208px;
   }
+
+  .trend-brand{
+    flex-direction: column;
+
+  }
+  .trend-brand a{
+    width:90%;
+    margin:10px auto;
+  }
+
 }
 
 
 @keyframes menu-open {
   from{
-    right:-67%
+    right:-70%
   }
   to{
     right:0
@@ -605,6 +640,173 @@ a {
   to{
     right:-70%
   }
+
+  
 }
 
 /* ====================== End dashboard ====================== */
+
+
+/* ============= Start dashboard sub categories ============= */
+.sub-cate-add-new{
+  background: #2F49D1;
+  color:#fff;
+  width: 100px;
+  max-width: 90%;
+  height: 30px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-cate-add-new:hover{
+  color:#fff;
+}
+
+.sub-cate-add-new i{
+  font-size: 12px;
+  margin-left: 10px;
+}
+.sub-cates-table{
+  direction:  ltr !important;
+}
+
+
+.sub-cates-table tr , .sub-cates-table td , .sub-cates-table th {
+  border:0 !important
+}
+
+.sub-cates-table table{
+  margin-top: 30px;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+  vertical-align: middle;
+
+}
+
+.sub-cates-table thead::after{
+  content:"";
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sub-cates-table th{
+  background: #fff;
+  font-size: 15px;
+}
+
+.sub-cates-table th:first-of-type {
+  border-radius: 11px 0 0 11px;
+  -webkit-border-radius: 11px 0 0 11px;
+  -moz-border-radius: 11px 0 0 11px;
+  -ms-border-radius: 11px 0 0 11px;
+  -o-border-radius: 11px 0 0 11px;
+  padding-left: 30px;
+}
+
+.sub-cates-table th:last-of-type{
+  border-radius: 0 11px 11px 0;
+  -webkit-border-radius: 0 11px 11px 0;
+  -moz-border-radius: 0 11px 11px 0;
+  -ms-border-radius: 0 11px 11px 0;
+  -o-border-radius: 0 11px 11px 0;
+}
+
+
+.sub-cates-table  td{
+  font-size: 15px;
+  white-space:nowrap;
+}
+
+.sub-cates-table tbody  tr{
+  height: 60px;
+}
+
+.sub-cates-table  td:first-child{
+  padding-left: 30px;
+  color: #5392E3;
+  
+}
+
+.sub-cates-table  td:nth-child(n+2){
+  color:#727272
+}
+.sub-cate-edit{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sub-cates-table  td:last-child a:nth-child(1){
+  background: #5392E3;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+  color:#fff;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-cates-table  td:last-child a:nth-child(2){
+  background:#5392E3 ;
+  color:#fff;
+  width: 95px;
+  height: 32px;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-cates-table  td:last-child a:nth-child(3){
+  background: #F83D56;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+  color:#fff;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-cates-table tbody{
+  background: #fff;
+
+}
+
+.sub-cates-table table tr:first-child td:first-child {border-top-left-radius: 11px;}
+.sub-cates-table table tr:first-child td:last-child{border-top-right-radius: 11px;}
+.sub-cates-table table tr:last-child td:first-child{border-bottom-left-radius: 11px}
+.sub-cates-table table tr:last-child td:last-child{border-bottom-right-radius: 11px;}
+
+
+@media (max-width:991.98px){
+  .sub-cates-table td:last-child a:nth-child(2){
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 32px;
+  }
+}
+
+/* ============= End dashboard sub categories ============= */
+

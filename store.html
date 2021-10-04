@@ -455,7 +455,7 @@
 
 
 
-
+        // text ...
         const product_boxes = document.querySelectorAll(".product-box p");
         let content = Array();
         product_boxes.forEach(ele => {
@@ -466,6 +466,7 @@
 
         })
 
+        // filters
         $(".all-sections button , .products-brand button , .offers-products button").on('click', function () {
             $(this).siblings('ul').slideToggle(100);
             $(this).children("i").toggleClass("rotate");
@@ -481,9 +482,8 @@
             e.stopPropagation()
         })
 
+
         $(".product-box-details a").addClass("hover");
-
-
         $(".hover").hover(function () {
             if ($(this).css("backgroundColor") == 'rgb(255, 255, 255)') {
                 $(this).css("backgroundColor", "#0e2978")
@@ -519,9 +519,6 @@
             })
         }
         
-
-
-
         $(".product-box").click(function(){
             window.location = $(this).find("a.d-none").attr('href');
         })

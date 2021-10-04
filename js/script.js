@@ -2,15 +2,15 @@
 const body = document.querySelector("body");
 const nav = document.createElement("nav");
 nav.innerHTML = ` <nav class='navbar navbar-expand-xl'>
-<div class="container">
+<div class="container p-1">
     <a href="./index.html" class="navbar-brand"><img src="images/logo.svg" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" >
         <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav text-center align-items-center">
-            <li class="nav-item"><a href="#" class="nav-link">من نحن</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">اتصل بنا</a></li>
+            <li class="nav-item"><a href="./aboutus.html" class="nav-link">من نحن</a></li>
+            <li class="nav-item"><a href="./contactus.html" class="nav-link">اتصل بنا</a></li>
             <li class="nav-item"><a href="./store.html" class="nav-link">المتجر</a></li>
             <li class="nav-item"><a href="#" class="nav-link">الحلول</a></li>
         </ul>
@@ -21,11 +21,16 @@ nav.innerHTML = ` <nav class='navbar navbar-expand-xl'>
         <ul class='navbar-nav ms-auto text-center align-items-xl-center'>
 
             <li class="nav-item"><a href="#" class="nav-link nav-lang">En</a></li> 
-            <li class="nav-item"><a href="#" class="nav-link">تسجيل الدخول</a></li> 
+            <li class="nav-item"><a href="./login.html" class="nav-link">تسجيل الدخول</a></li> 
             <li class="nav-item"><a href="./newuser.html" class="nav-link new-user">مستخدم جديد</a></li> 
             <div class='d-flex my-3'>
-                <li class="nav-item w-50"><a href="#" class="nav-link nav-icon"><i class="far fa-shopping-bag"></i></a></li> 
-                <li class="nav-item w-50"><a href="#" class="nav-link nav-icon"><i class="fas fa-shopping-cart"></i></a></li> 
+                <li class="nav-item w-50"><a href="#" class="nav-link nav-icon"><i class="far fa-shopping-bag"></i><span>1</span></a></li> 
+                <li class="nav-item w-50">
+                <a href="./shoppingcart.html" class="nav-link nav-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span>1</span>
+                </a>
+                </li> 
             </div>
            
         </ul>
@@ -49,8 +54,8 @@ footer.innerHTML = `
             <p class="h2">سجل الان</p>
             <p class="h4">في متجر غمز</p>
             <div class="footer-signment-btns">
-                <a href="#">تسجيل الدخول</a>
-                <a href="#">مستخدم جديد</a>
+                <a href="./login.html">تسجيل الدخول</a>
+                <a href="./newuser.html">مستخدم جديد</a>
             </div>
         </div>
     </div>
@@ -63,8 +68,8 @@ footer.innerHTML = `
                         <p class="h4">وسائل الدفع</p>
                         <img src="images/payment_option.svg" alt="payment-option">
                         <ul>
-                            <li><a href="#">سياسة الاسترجاع والاستبدال</a></li>
-                            <li><a href="#">سياسة الاستخدام</a></li>
+                            <li><a href="./return_policy.html">سياسة الاسترجاع والاستبدال</a></li>
+                            <li><a href="./privacy.html">سياسة الاستخدام</a></li>
                             <li><a href="#">التسويق لموقعنا</a></li>
                         </ul>
                     </div>
@@ -73,10 +78,10 @@ footer.innerHTML = `
                     <div class="popular-questions">
                         <p class="h4">الأسئلة الشائعة</p>
                         <ul>
-                            <li><a href="#">تصفح جميع المنتجات</a></li>
+                            <li><a href="./store.html">تصفح جميع المنتجات</a></li>
                             <li><a href="#">تعرف على اخر عروضنا</a></li>
-                            <li><a href="#">تواصل معنا</a></li>
-                            <li><a href="#">من نحن</a></li>
+                            <li><a href="./contactus.html">تواصل معنا</a></li>
+                            <li><a href="./aboutus.html">من نحن</a></li>
                         </ul>
                     </div>
                 </div>
