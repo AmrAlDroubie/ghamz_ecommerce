@@ -1270,6 +1270,38 @@ a {
   outline: none;
 }
 
+.store-next-prev{
+  margin-top: 50px;
+}
+
+.store-pag-btn{
+  width: 120px;
+  max-width: 48%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  -o-border-radius:10px;
+}
+
+.store-pag-btn:hover{color:#fff}
+
+.store-pag-prev{
+  background-color: #DDDDDD;
+  margin-left: 5px;
+}
+
+.store-pag-next{
+  margin-right: 5px;
+  background: rgb(40,56,151);
+  background: linear-gradient(270deg, rgba(40,56,151,1) 0%, rgba(99,116,214,1) 35%);
+}
+
 @media (max-width: 998.98px) {
   .all-sections button,
   .products-brand button,
