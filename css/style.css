@@ -1216,9 +1216,14 @@ a {
   width: 180px;
 }
 
-.all-sections ul,
-.products-brand ul,
-.offers-products ul {
+
+.all-sections{
+  width: 160px;
+  position: relative;
+}
+.all-sections > ul,
+.products-brand > ul,
+.offers-products > ul {
   width: 160px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.096);
@@ -1226,6 +1231,45 @@ a {
   position: absolute;
   display: none;
   z-index: 999;
+}
+
+.sub-list{
+  right:100%;
+  position: absolute;
+  width: 160px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.096);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 999;
+  top:0;
+  display: none;
+  
+}
+
+.sub-list a{
+  color:#000
+}
+
+.sub-list-title{
+  cursor: pointer;
+}
+
+.overflow-cover{
+  display: none;
+  position: fixed;
+  top:0;
+  left: 0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  background-color:red;
+  z-index: 99;
+}
+
+.sub-list-title:hover+ul{
+  display: block;
 }
 
 .products-brand ul {
@@ -1238,8 +1282,8 @@ a {
   width: 180px;
 }
 
-.all-sections ul a,
-.products-brand ul a,
+.all-sections ul  li,
+.products-brand ul  a,
 .offers-products ul a {
   margin-bottom: 10px;
   color: #000;
@@ -1253,7 +1297,7 @@ a {
   -moz-appearance: none;
   -webkit-appearance: none;
   -o-appearance: none;
-  width: 240px;
+  width: 180px;
   max-width: 100%;
   height: 40px;
   background: url("../images/caret_select_box.svg");
@@ -1263,7 +1307,10 @@ a {
   border: 1px solid #b6b6b6;
   border-radius: 8px;
   padding-right: 10px;
-  font-size: 16px;
+  font-size: 12px;
+}
+.store-select-1{
+  width:120px;
 }
 
 .store-select:focus {
@@ -1311,7 +1358,7 @@ a {
     margin-top: 25px;
     display: block;
   }
-  .all-sections ul, .products-brand ul, .offers-products ul{
+  .all-sections > ul, .products-brand > ul, .offers-products > ul{
       position: static;
       margin:0 auto;
       width: 90%;
@@ -1370,11 +1417,13 @@ a {
 }
 
 .filter-box form{
-    display: none;
     width: 100%;
     margin-top: 10px;
-    
-    
+}
+
+.filter-box form select{
+  width: 100%;
+  border:0;
 }
 
 .filter-box.open{
@@ -2536,8 +2585,10 @@ input[type="range"]:active::-webkit-slider-thumb{
 /* Start shipping */
 
 .shipping-cart-box{
-  margin: 20px auto 20px;
+  margin: 20px 0 20px;
   min-height: 55px;
+  width: 355px;
+  max-width:95%;
   border:1px solid #0E2978;
   border-radius:8px;
   d-webkit-border-radius: d;

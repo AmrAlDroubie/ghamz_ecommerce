@@ -17,12 +17,12 @@
 
 <body>
 
-
+    
     <!-- Start store filter -->
     <section class="store-filter">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-7 col-12">
                     <div
                         class="filter-products d-flex flex-lg-row flex-column justify-content-lg-start justify-content-center align-items-lg-center">
                         <div class="all-sections">
@@ -31,9 +31,36 @@
                                 <i class='fas fa-caret-down'></i>
                             </button>
                             <ul>
-                                <li><a href="#">منتج 1</a></li>
-                                <li><a href="#">منتج 2</a></li>
-                                <li><a href="#">منتج 3</a></li>
+                                <li>
+                                    <span class='sub-list-title d-block'>x</span>
+                                    <ul class='sub-list'>
+                                        <li><a href="#">x1</a></li>
+                                        <li><a href="#">x2</a></li>
+                                        <li><a href="#">x3</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class='sub-list-title d-block'>y</span>
+                                    <ul class='sub-list'>
+                                        <li><a href="#">y1</a></li>
+                                        <li><a href="#">y2</a></li>
+                                        <li><a href="#">y3</a></li>
+                                    </ul>
+                                </li>
+                                <li><span class='sub-list-title d-block'>z</span>
+                                    <ul class='sub-list'>
+                                        <li><a href="#">z1</a></li>
+                                        <li><a href="#">z2</a></li>
+                                        <li><a href="#">z3</a></li>
+                                    </ul>
+                                </li>
+                                <li><span class='sub-list-title d-block'>z</span>
+                                    <ul class='sub-list'>
+                                        <li><a href="#">z1</a></li>
+                                        <li><a href="#">z2</a></li>
+                                        <li><a href="#">z3</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                         <div class="products-brand">
@@ -60,14 +87,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-5 col-12 d-flex ">
+                    <div class="store-filter-box   ms-auto">
+                        <form action="">
+                            <select name="" id="" class='store-select store-select-1 d-block '>
+                                <option value="" disabled selected>فرز حسب</option>
+                                <option value="">السعر تصاعديا</option>
+                                <option value="">السعر تنازليا</option>
+                                <option value="">أحدث المنتجات</option>
+                            </select>
+                        </form>
+                    </div>
 
-                    <div class="store-filter-box ">
-                        <select class='store-select d-block ms-auto'>
-                            <option value="" selected disabled>عدد المنتجات المراد عرضها</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                        </select>
+
+                    <div class="store-filter-box ms-1">
+                        <form action="">
+                            <select class='store-select d-block'>
+                                <option value="" selected disabled>عدد المنتجات المراد عرضها</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </form>
+
                     </div>
 
                 </div>
@@ -88,34 +129,19 @@
                         <div class="result-panel-title ">
                             تصفية النتائج
                         </div>
-                        <div class="filter-box-lists" >
-                            <div class="close-list-mobile d-lg-none d-block"><i class="fas fa-angle-double-right"></i></div>
+                        <div class="filter-box-lists">
+                            <div class="close-list-mobile d-lg-none d-block"><i class="fas fa-angle-double-right"></i>
+                            </div>
                             <div class="filter-box">
-                                <span>الماركة</span>
-                                <i class='far fa-minus-square'></i>
                                 <form action="">
-                                    <ul>
-                                        <li>
-                                            <input type="checkbox" name="" id="ICOM">
-                                            <label for="ICOM">ICOM</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="Motorola">
-                                            <label for="Motorola">Motorola</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="Boafeing">
-                                            <label for="Boafeing">Boafeing</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="Kenwood">
-                                            <label for="Kenwood">Kenwood</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="TYT">
-                                            <label for="TYT">TYT</label>
-                                        </li>
-                                    </ul>
+                                    <select name="" id="">
+                                        <option selected disabled>الماركة</option>
+                                        <option value="ICOM">ICOM</option>
+                                        <option value="Motorola">Motorola</option>
+                                        <option value="Boafeing">Boafeing</option>
+                                        <option value="Kenwood">Kenwood</option>
+                                        <option value="TYT">TYT</option>
+                                    </select>
                                 </form>
                             </div>
                             <div class="filter-box">
@@ -137,138 +163,61 @@
                             </div>
 
                             <div class="filter-box">
-                                <span>فرز حسب</span>
-                                <i class='far fa-minus-square'></i>
                                 <form action="">
-                                    <ul>
-                                        <li>
-                                            <input type="checkbox" name="" id="ICOM">
-                                            <label for="ICOM">السعر تصاعديا</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="Motorola">
-                                            <label for="Motorola">السعر تنازليا</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="Boafeing">
-                                            <label for="Boafeing">أحدث المنتجات</label>
-                                        </li>
-
-                                    </ul>
+                                    <select name="" id="">
+                                        <option value="" disabled selected>لوحة المفاتيح</option>
+                                        <option value="">NON</option>
+                                        <option value="">Full</option>
+                                        <option value="">Limit</option>
+                                    </select>
                                 </form>
                             </div>
                             <div class="filter-box">
-                                <span>لوحة المفاتيح</span>
-                                <i class='far fa-minus-square'></i>
                                 <form action="">
-                                    <ul>
-                                        <li>
-                                            <input type="checkbox" name="" id="ICOM">
-                                            <label for="ICOM">NON</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="Motorola">
-                                            <label for="Motorola">Full</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="Boafeing">
-                                            <label for="Boafeing">Limit</label>
-                                        </li>
-                                    </ul>
+                                    <select name="" id="">
+                                        <option value="" disabled selected>التكرار</option>
+                                        <option value="">VHF</option>
+                                        <option value="">UHF</option>
+                                        <option value="">VHF OR UHF</option>
+                                        <option value="">Dual band</option>
+                                    </select>
                                 </form>
                             </div>
                             <div class="filter-box">
-                                <span>التكرار</span>
-                                <i class='far fa-minus-square'></i>
                                 <form action="">
-                                    <ul>
-                                        <li>
-                                            <input type="checkbox" name="" id="ICOM">
-                                            <label for="ICOM">VHF</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="Motorola">
-                                            <label for="Motorola">UHF</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="Boafeing">
-                                            <label for="Boafeing">VHF OR UHF</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="Boafeing">
-                                            <label for="Boafeing">Dual band</label>
-                                        </li>
-                                    </ul>
+                                    <select name="" id="">
+                                        <option value="" disabled selected>القنوات</option>
+                                        <option value="">128</option>
+                                        <option value="">16</option>
+                                    </select>
                                 </form>
                             </div>
                             <div class="filter-box">
-                                <span>القنوات</span>
-                                <i class='far fa-minus-square'></i>
                                 <form action="">
-                                    <ul>
-                                        <li>
-                                            <input type="checkbox" name="" id="ICOM">
-                                            <label for="ICOM">128</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="Motorola">
-                                            <label for="Motorola">16</label>
-                                        </li>
-
-                                    </ul>
+                                    <select name="" id="">
+                                        <option value="" disabled selected>البروتوكول</option>
+                                        <option value="">Analog</option>
+                                        <option value="">Digital</option>
+                                        <option value="">Digital Analog</option>
+                                    </select>
                                 </form>
                             </div>
                             <div class="filter-box">
-                                <span>البروتوكول</span>
-                                <i class='far fa-minus-square'></i>
                                 <form action="">
-                                    <ul>
-                                        <li>
-                                            <input type="checkbox" name="" id="ICOM">
-                                            <label for="ICOM">Analog</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="Motorola">
-                                            <label for="Motorola">Digital</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="Motorola">
-                                            <label for="Motorola">Digital Analog</label>
-                                        </li>
-
-                                    </ul>
+                                    <select name="" id="">
+                                        <option value="" disabled selected>البروتوكول</option>
+                                        <option value="">Yes</option>
+                                        <option value="">No</option>
+                                    </select>
                                 </form>
                             </div>
                             <div class="filter-box">
-                                <span>VOX</span>
-                                <i class='far fa-minus-square'></i>
                                 <form action="">
-                                    <ul>
-                                        <li>
-                                            <input type="checkbox" name="vox" id="ICOM">
-                                            <label for="ICOM">Yes</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="vox" id="Motorola">
-                                            <label for="Motorola">No</label>
-                                        </li>
-                                    </ul>
-                                </form>
-                            </div>
-                            <div class="filter-box">
-                                <span>إرسال الإشارات</span>
-                                <i class='far fa-minus-square'></i>
-                                <form action="">
-                                    <ul>
-                                        <li>
-                                            <input type="checkbox" name="vox" id="ICOM">
-                                            <label for="ICOM">Simplex / Semi-Duplex</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="vox" id="Motorola">
-                                            <label for="Motorola">MDC </label>
-                                        </li>
-                                    </ul>
+                                    <select name="" id="">
+                                        <option value="" disabled selected>إرسال الإشارات</option>
+                                        <option value="">Simplex / Semi-Duplex</option>
+                                        <option value="">MDC</option>
+                                    </select>
                                 </form>
                             </div>
                         </div>
@@ -317,8 +266,8 @@
                         </div>
 
 
-                         <!-- Box -->
-                         <div class="col-lg-3 col-6 p-lg-2 p-1">
+                        <!-- Box -->
+                        <div class="col-lg-3 col-6 p-lg-2 p-1">
                             <div class="product-box w-100">
                                 <img src="images/latest_box.png" alt="">
                                 <div class="product-box-title">
@@ -337,8 +286,8 @@
                         </div>
 
 
-                         <!-- Box -->
-                         <div class="col-lg-3 col-6 p-lg-2 p-1">
+                        <!-- Box -->
+                        <div class="col-lg-3 col-6 p-lg-2 p-1">
                             <div class="product-box w-100">
                                 <img src="images/latest_box.png" alt="">
                                 <div class="product-box-title">
@@ -356,8 +305,8 @@
                             </div>
                         </div>
 
-                         <!-- Box -->
-                         <div class="col-lg-3 col-6 p-lg-2 p-1">
+                        <!-- Box -->
+                        <div class="col-lg-3 col-6 p-lg-2 p-1">
                             <div class="product-box w-100">
                                 <img src="images/latest_box.png" alt="">
                                 <div class="product-box-title">
@@ -375,7 +324,7 @@
                             </div>
                         </div>
 
-                        
+
                     </div>
 
                 </div>
@@ -399,8 +348,9 @@
                             <span>السابق</span>
                         </a>
                         <a href="#" class='store-pag-btn store-pag-next'>
-                            <i class="fas fa-angle-double-left"></i>
                             <span>التالي</span>
+                            <i class="fas fa-angle-double-left"></i>
+
                         </a>
                     </div>
                 </div>
@@ -476,15 +426,26 @@
         })
 
         // filters
+        $(".sub-list-title").
         $(".all-sections button , .products-brand button , .offers-products button").on('click', function () {
             $(this).siblings('ul').slideToggle(100);
             $(this).children("i").toggleClass("rotate");
+           
+        })
+
+
+        $('.sub-list-title').parent('li').hover(function(){
+            $(this).children("ul").toggle();
+          
 
         })
 
-        $(".filter-box").click(function (e) {
 
-            $(this).children("form").slideToggle(200)
+
+
+        $(".filter-box span , .filter-box i ").click(function () {
+
+            $(this).siblings("form").slideToggle(200)
         })
 
         $(".filter-box form").click(function (e) {
@@ -505,7 +466,7 @@
 
         })
 
-        if($(window).width() <= 998){
+        if ($(window).width() <= 998) {
             const lists_width = "-" + $(".filter-box-lists").width();
             $(".filter-box-lists").css("right", lists_width + "px")
 
@@ -516,19 +477,19 @@
                 $(".filter-box-lists").css({
                     "display": "block",
                 })
-                $("body").css("overflow-y",'hidden')
+                $("body").css("overflow-y", 'hidden')
             })
 
-            $('.close-list-mobile').click(function(){
+            $('.close-list-mobile').click(function () {
                 $(".filter-box-lists").animate({
                     "right": lists_width,
                 }, 200)
-                $("body").css("overflow-y",'auto')
-                
+                $("body").css("overflow-y", 'auto')
+
             })
         }
-        
-        $(".product-box").click(function(){
+
+        $(".product-box").click(function () {
             window.location = $(this).find("a.d-none").attr('href');
         })
 
