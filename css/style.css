@@ -693,6 +693,10 @@ a {
 
 /* ================== Start Home page ============================ */
 /* Start carousel */
+.carousel-item{
+  overflow:hidden !important
+}
+
 .carousel-indicators [data-bs-target] {
   width: 14px;
   height: 14px;
@@ -1085,13 +1089,14 @@ a {
   border: 1px solid #cccccc;
   display: flex;
   padding: 10px;
+  align-items: center;
 }
 
 .complete-projects-box p {
   margin: 10px 14px;
 }
 
-@media (max-width: 998.98px) {
+@media (max-width:1198.98px) {
   .complete-projects-box {
     flex-direction: column;
     text-align: center;

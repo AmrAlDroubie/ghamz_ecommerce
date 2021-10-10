@@ -120,6 +120,7 @@ footer.innerHTML = `
             </div>
         </div>
     </div>
+    <div class='footer-copyright'><span> شركة وساطة © 2021 </span></div>
 
 <!-- End footer -->
 `;
@@ -141,12 +142,32 @@ for (let i = 0; i < ele.length; i += 2) {
 
 // End equal boxes
 
+
 // home page add background image to products boxes
-const boxes = document.querySelectorAll(".products-box");
-boxes[0].style.backgroundImage = 'url("./images/products_box_1.png")';
-boxes[1].style.backgroundImage = 'url("./images/products_box_2.png")';
-boxes[2].style.backgroundImage = 'url("./images/products_box_3.png")';
-boxes[3].style.backgroundImage = 'url("./images/products_box_4.png")';
+try{
+    const boxes = document.querySelectorAll(".products-box");
+    boxes[0].style.backgroundImage = 'url("./images/products_box_1.png")';
+    boxes[1].style.backgroundImage = 'url("./images/products_box_2.png")';
+    boxes[2].style.backgroundImage = 'url("./images/products_box_3.png")';
+    boxes[3].style.backgroundImage = 'url("./images/products_box_4.png")';
+}
+catch{
+    console.log('erro')
+}
 
 
-
+// complete account info box
+$(".complete-account-info button").click(function(){
+    
+   $(this).parent().toggleClass("complete-account-info-active");
+   if($(this).parent().hasClass("complete-account-info-active")){
+    $(this).parent().animate({
+        right:0
+    },500)
+   }
+   else{
+        $(this).parent().animate({
+        right: '-'  + $(this).parent().innerWidth() - 5 + 'px'
+    },500)
+   }
+})
