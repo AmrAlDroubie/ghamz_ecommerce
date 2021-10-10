@@ -21,7 +21,7 @@
     <section class="store-filter">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-7 col-12">
                     <div
                         class="filter-products d-flex flex-lg-row flex-column justify-content-lg-start justify-content-center align-items-lg-center">
                         <div class="all-sections">
@@ -30,9 +30,39 @@
                                 <i class='fas fa-caret-down'></i>
                             </button>
                             <ul>
-                                <li><a href="#">منتج 1</a></li>
-                                <li><a href="#">منتج 2</a></li>
-                                <li><a href="#">منتج 3</a></li>
+                                <li>
+                                    <span class='sub-list-title d-block'>منتج</span>
+                                    <ul class='sub-list'>
+                                        <span class="mobile-close-sub-list m-color d-lg-none d-block"><i
+                                                class="fas fa-arrow-left"></i></span>
+                                        <li>العنوان</li>
+                                        <li><a href="#">منتج فرعي 1</a></li>
+                                        <li><a href="#">منتج فرعي 2</a></li>
+                                        <li><a href="#">منتج فرعي 3</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class='sub-list-title d-block'>منتج</span>
+                                    <ul class='sub-list'>
+                                        <span class="mobile-close-sub-list m-color d-lg-none d-block"><i
+                                                class="fas fa-arrow-left"></i></span>
+                                        <li>العنوان</li>
+                                        <li><a href="#">منتج فرعي 1</a></li>
+                                        <li><a href="#">منتج فرعي 2</a></li>
+                                        <li><a href="#">منتج فرعي 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><span class='sub-list-title d-block'>منتج</span>
+                                    <ul class='sub-list'>
+                                        <span class="mobile-close-sub-list m-color d-lg-none d-block"><i
+                                                class="fas fa-arrow-left"></i></span>
+                                        <li>العنوان</li>
+                                        <li><a href="#">منتج فرعي 1</a></li>
+                                        <li><a href="#">منتج فرعي 2</a></li>
+                                        <li><a href="#">منتج فرعي 3</a></li>
+                                    </ul>
+                                </li>
+
                             </ul>
                         </div>
                         <div class="products-brand">
@@ -59,7 +89,31 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-5 col-12 d-flex flex-lg-row flex-column">
+                    <div class="store-filter-box  w-lg-auto w-100">
+                        <form action="">
+                            <select name="" id="" class='store-select store-select-1 d-block ms-auto'>
+                                <option value="" disabled selected>فرز حسب</option>
+                                <option value="">السعر تصاعديا</option>
+                                <option value="">السعر تنازليا</option>
+                                <option value="">أحدث المنتجات</option>
+                            </select>
+                        </form>
+                    </div>
 
+
+                    <div class="store-filter-box ms-lg-1">
+                        <form action="">
+                            <select class='store-select d-block'>
+                                <option value="" selected disabled>عدد المنتجات المراد عرضها</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </form>
+
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -179,7 +233,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="shipping-cart-box ms-auto d-flex justify-content-lg-between flex-lg-row flex-column align-items-lg-center">
+                    <div
+                        class="shipping-cart-box ms-auto d-flex justify-content-lg-between flex-lg-row flex-column align-items-lg-center">
                         <span>الشحن إلى</span>
                         <form action="">
                             <select name="" id="">
@@ -205,7 +260,8 @@
                 <div class="col-12">
                     <div class="cart-total-box ms-lg-auto ">
                         <p>الشراء</p>
-                        <div class='d-flex justify-content-between align-items-center cart-total-details cart-total-details-1'>
+                        <div
+                            class='d-flex justify-content-between align-items-center cart-total-details cart-total-details-1'>
                             <span>المجموع</span>
                             <span>2000$</span>
                         </div>
@@ -214,7 +270,7 @@
                             <span>50$</span>
                         </div>
                         <form action="" class='d-flex justify-content-between cart-total-form'>
-                            <input type="text" name="" id="" placeholder="كوبون خصم"> 
+                            <input type="text" name="" id="" placeholder="كوبون خصم">
                             <input type="submit" value="إرسال">
                         </form>
                         <a href="#" class='d-block text-center text-white mt-2'>شراء</a>
@@ -240,10 +296,23 @@
 
     <script>
         // filters
+
         $(".all-sections button , .products-brand button , .offers-products button").on('click', function () {
             $(this).siblings('ul').slideToggle(100);
             $(this).children("i").toggleClass("rotate");
 
+        })
+
+
+        $('.sub-list-title').parent('li').hover(function () {
+            $(this).children("ul").css('display', 'block')
+        }, function () {
+            $(this).children("ul").css('display', 'none')
+        })
+
+
+        $(".mobile-close-sub-list").click(function () {
+            $(this).parent('ul').hide();
         })
 
 

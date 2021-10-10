@@ -17,6 +17,19 @@
 
 <body>
 
+    <!-- complete information alert -->
+    <div class="complete-account-info">
+        <p>
+            من فضلك قم بتعديل بيانات 
+            العنوان الخاصة بك<br>
+        </p>
+        <a href="#" class='m-color d-flex justify-content-center align-items-center ms-auto'>تعديل</a>
+        <button>
+            <i class="fas fa-info-circle"></i>
+        </button>
+    </div>
+    
+
     
     <!-- Start store filter -->
     <section class="store-filter">
@@ -32,35 +45,35 @@
                             </button>
                             <ul>
                                 <li>
-                                    <span class='sub-list-title d-block'>x</span>
+                                    <span class='sub-list-title d-block'>منتج</span>
                                     <ul class='sub-list'>
-                                        <li><a href="#">x1</a></li>
-                                        <li><a href="#">x2</a></li>
-                                        <li><a href="#">x3</a></li>
+                                        <span class="mobile-close-sub-list m-color d-lg-none d-block"><i class="fas fa-arrow-left"></i></span>
+                                        <li>العنوان</li>
+                                        <li><a href="#">منتج فرعي 1</a></li>
+                                        <li><a href="#">منتج فرعي 2</a></li>
+                                        <li><a href="#">منتج فرعي 3</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <span class='sub-list-title d-block'>y</span>
+                                    <span class='sub-list-title d-block'>منتج</span>
                                     <ul class='sub-list'>
-                                        <li><a href="#">y1</a></li>
-                                        <li><a href="#">y2</a></li>
-                                        <li><a href="#">y3</a></li>
+                                        <span class="mobile-close-sub-list m-color d-lg-none d-block"><i class="fas fa-arrow-left"></i></span>
+                                        <li>العنوان</li>
+                                        <li><a href="#">منتج فرعي 1</a></li>
+                                        <li><a href="#">منتج فرعي 2</a></li>
+                                        <li><a href="#">منتج فرعي 3</a></li>
                                     </ul>
                                 </li>
-                                <li><span class='sub-list-title d-block'>z</span>
+                                <li><span class='sub-list-title d-block'>منتج</span>
                                     <ul class='sub-list'>
-                                        <li><a href="#">z1</a></li>
-                                        <li><a href="#">z2</a></li>
-                                        <li><a href="#">z3</a></li>
+                                        <span class="mobile-close-sub-list m-color d-lg-none d-block"><i class="fas fa-arrow-left"></i></span>
+                                        <li>العنوان</li>
+                                        <li><a href="#">منتج فرعي 1</a></li>
+                                        <li><a href="#">منتج فرعي 2</a></li>
+                                        <li><a href="#">منتج فرعي 3</a></li>
                                     </ul>
                                 </li>
-                                <li><span class='sub-list-title d-block'>z</span>
-                                    <ul class='sub-list'>
-                                        <li><a href="#">z1</a></li>
-                                        <li><a href="#">z2</a></li>
-                                        <li><a href="#">z3</a></li>
-                                    </ul>
-                                </li>
+                              
                             </ul>
                         </div>
                         <div class="products-brand">
@@ -87,10 +100,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-12 d-flex ">
-                    <div class="store-filter-box   ms-auto">
+                <div class="col-lg-5 col-12 d-flex flex-lg-row flex-column">
+                    <div class="store-filter-box  w-lg-auto w-100">
                         <form action="">
-                            <select name="" id="" class='store-select store-select-1 d-block '>
+                            <select name="" id="" class='store-select store-select-1 d-block ms-auto'>
                                 <option value="" disabled selected>فرز حسب</option>
                                 <option value="">السعر تصاعديا</option>
                                 <option value="">السعر تنازليا</option>
@@ -100,7 +113,7 @@
                     </div>
 
 
-                    <div class="store-filter-box ms-1">
+                    <div class="store-filter-box ms-lg-1">
                         <form action="">
                             <select class='store-select d-block'>
                                 <option value="" selected disabled>عدد المنتجات المراد عرضها</option>
@@ -426,7 +439,7 @@
         })
 
         // filters
-        $(".sub-list-title").
+        
         $(".all-sections button , .products-brand button , .offers-products button").on('click', function () {
             $(this).siblings('ul').slideToggle(100);
             $(this).children("i").toggleClass("rotate");
@@ -435,10 +448,16 @@
 
 
         $('.sub-list-title').parent('li').hover(function(){
-            $(this).children("ul").toggle();
-          
-
+            $(this).children("ul").css('display','block')
+        },function(){
+            $(this).children("ul").css('display','none')
         })
+
+
+        $(".mobile-close-sub-list").click(function(){
+            $(this).parent('ul').hide();
+        })
+       
 
 
 
@@ -496,7 +515,7 @@
 
 
     </script>
-
+ 
 </body>
 
 </html>
