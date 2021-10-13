@@ -146,10 +146,10 @@ for (let i = 0; i < ele.length; i += 2) {
 // home page add background image to products boxes
 try{
     const boxes = document.querySelectorAll(".products-box");
-    boxes[0].style.backgroundImage = 'url("./images/products_box_1.png")';
-    boxes[1].style.backgroundImage = 'url("./images/products_box_2.png")';
-    boxes[2].style.backgroundImage = 'url("./images/products_box_3.png")';
-    boxes[3].style.backgroundImage = 'url("./images/products_box_4.png")';
+    boxes[0].style.backgroundImage = 'url(' + boxes[0].getAttribute('data-background-link') + ')';
+    boxes[1].style.backgroundImage = 'url(' + boxes[1].getAttribute('data-background-link') + ')';
+    boxes[2].style.backgroundImage = 'url(' + boxes[2].getAttribute('data-background-link') + ')';
+    boxes[3].style.backgroundImage ='url(' + boxes[3].getAttribute('data-background-link') + ')';
 }
 catch{
     console.log('erro')

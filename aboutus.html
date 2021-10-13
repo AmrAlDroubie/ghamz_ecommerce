@@ -21,7 +21,7 @@
 
     <!-- Start about us hero -->
 
-    <section class="about-us-hero d-flex flex-column justify-content-center">
+    <section class="about-us-hero d-flex flex-column justify-content-center" data-background-link='images/about_us_hero.png'>
         <div class="container">
             <div class="row">
                 <div class="col-12 ">
@@ -183,6 +183,10 @@
     <script src="js/script.js"></script>
     <script>
 
+        // background image 
+
+        const about_us__hero = document.querySelector(".about-us-hero");
+        about_us__hero.style.backgroundImage = 'url(' + about_us__hero.getAttribute("data-background-link") + ')';
 
 
         // partners slider
@@ -205,25 +209,23 @@
         // clients slider
         var clients_swiper = new Swiper(".clients-slider", {
             spaceBetween: 20,
+            navigation: {
+                        nextEl: ".clients-button-next",
+                        prevEl: ".clients-button-prev",
+                    },
             breakpoints: {
 
                 1000: {
                     slidesPerView: 4,
-                    navigation: {
-                        nextEl: ".clients-button-next",
-                        prevEl: ".clients-button-prev",
-                    },
-                    autoplay:false
-                   
+                    autoplay:false 
                 },
 
             },
+            rtl:true,
             loop: true,
             autoplay:{
                 delay:2000
             }
-
-
 
         });
 
