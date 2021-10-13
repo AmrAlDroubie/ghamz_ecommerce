@@ -76,8 +76,8 @@ footer.innerHTML = `
                 </div>
                 <div class="col-lg-3 col-12">
                     <div class="popular-questions">
-                        <p class="h4">الأسئلة الشائعة</p>
                         <ul>
+                            <li><a href="">الأسئلة الشائعة</a></li>
                             <li><a href="./store.html">تصفح جميع المنتجات</a></li>
                             <li><a href="#">تعرف على اخر عروضنا</a></li>
                             <li><a href="./contactus.html">تواصل معنا</a></li>

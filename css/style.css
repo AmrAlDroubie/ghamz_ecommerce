@@ -1117,7 +1117,7 @@ a {
 }
 
 .footer-signment p.h2 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -1160,9 +1160,8 @@ a {
   background-color: #f6f6f6;
 }
 
-.payment-option p.h4,
-.popular-questions p.h4 {
-  font-size: 22px;
+.payment-option p.h4{
+  font-size: 20px;
   margin-bottom: 25px;
 }
 
@@ -1175,9 +1174,13 @@ a {
 .payment-option ul li a,
 .popular-questions ul li a {
   margin-bottom: 25px;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
   display: block;
+}
+
+.popular-questions ul {
+  margin-top: 30px;
 }
 
 
@@ -1206,7 +1209,7 @@ a {
 }
 
 .footer-partners > ul li a {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 14px;
   display: block;
 }
@@ -1222,7 +1225,7 @@ a {
 }
 
 .footer-partners > ul li > span {
-  font-size: 21px;
+  font-size: 18px;
   margin-bottom: 12px;
   display: block;
 }
