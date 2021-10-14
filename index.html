@@ -253,9 +253,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-10 mx-auto">
+                <div class="col-xl-3 col-md">
                     <div class="latest-box">
-                        <img src="./images/latest_box.png" alt="">
+                        <img src="images/our_services_2.png" alt="">
                         <div class="latest-box-title">
                             <span>اسم المنتج</span>
                             <span>200$</span>
@@ -268,9 +268,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-10 mx-auto">
+                <div class="col-xl-3 col-md">
                     <div class="latest-box">
-                        <img src="./images/latest_box.png" alt="">
+                        <img src="images/our_services_4.png" alt="">
                         <div class="latest-box-title">
                             <span>اسم المنتج</span>
                             <span>200$</span>
@@ -283,9 +283,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-10 mx-auto">
+                <div class="col-xl-3 col-md">
                     <div class="latest-box">
-                        <img src="./images/latest_box.png" alt="">
+                        <img src="images/products_box_4.png" alt="">
                         <div class="latest-box-title">
                             <span>اسم المنتج</span>
                             <span>200$</span>
@@ -298,9 +298,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-10 mx-auto">
+                <div class="col-xl-3 col-md">
                     <div class="latest-box">
-                        <img src="./images/latest_box.png" alt="">
+                        <img src="images/contact_us_hero.png" alt="">
                         <div class="latest-box-title">
                             <span>اسم المنتج</span>
                             <span>200$</span>
@@ -364,16 +364,32 @@
     <!-- End complete projects -->
 
 
+    
+
+
     <!-- JQuery -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 
     <script>
+
+        // text ...
+        const product_boxes = document.querySelectorAll(".latest-box p");
+        let content = Array();
+        product_boxes.forEach(ele => {
+            for (let i = 0; i < product_boxes.length; i++) {
+                content[i] = product_boxes[i].textContent;
+                product_boxes[i].textContent = content[i].trim().slice(0, 40) + "...";
+            }
+
+        })
+
+
         var myCarousel = document.querySelector('#carouselExampleIndicators')
         var carousel = new bootstrap.Carousel(myCarousel, {
             interval: 2000,
-          
+
         })
     </script>
 
