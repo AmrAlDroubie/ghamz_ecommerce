@@ -2516,7 +2516,7 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin: 10px auto;
 }
 
-.new-user-box input {
+.new-user-box input:not([type='checkbox']){
   display: block;
   width: 598px;
   max-width: 95%;
@@ -2553,12 +2553,25 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-right: 10px;
 }
 
+
+
 /* ====================== End new user page ========================== */
 
 /* ====================== Start log in page ========================== */
 .login-box {
   min-height: 400px !important;
 }
+
+.login__remember_me__checkbox{
+  width: 600px;
+  margin:10px auto;
+}
+.login__remember_me__checkbox label{
+  margin-right: 10px;  
+}
+
+
+
 
 /* ====================== End log in page ========================== */
 
@@ -3143,3 +3156,127 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 }
 /* ================ End my account================ */
+
+/*================== Start offers price page =================*/
+.offres-price{
+  margin-top: 50px;
+}
+
+.complete-info__message{
+  color:#FD6161;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.complete-info__message a{color:#000}
+
+.offres-price__resgister__withus{
+  border:1px solid #D9D9D9;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+
+}
+
+.offres-price__resgister__withus__title{
+  border-bottom:1px solid #D9D9D9;
+  font-weight: bold;
+  color:#0e2978;
+  text-align: center;
+  font-size: 1rem;
+  height: 53px;
+  display: grid;
+  place-items: center;
+}
+.offres-price__resgister__withus__personal__info input,
+.offres-price__resgister__withus__details__address input{
+  width:100%;
+  height: 33px;
+  margin-bottom: 6px;
+  border:1px solid #b4b4b4;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  direction: rtl;
+  padding-right: 10px;
+  color:#333
+}
+
+.offres-price__resgister__withus__personal__info input::placeholder{
+  font-size: 15px;
+
+}
+
+.offres-price__resgister__withus__personal__info,
+.offres-price__resgister__withus__details__address{
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.offres-price__resgister__withus__main__title{
+  font-size: 16px;
+  color:#0e2978;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.offres-price__resgister__withus__sub__title{
+  margin:10px 0;
+  display: block;
+}
+
+.offres-price__resgister__withus__details__address select{
+  width:100%;
+  margin-bottom: 5px;
+  width:100%;
+  height: 33px;
+  margin-bottom: 6px;
+  border:1px solid #b4b4b4;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  color:#333;
+  padding-right: 10px;
+}
+
+.offres-price__resgister__withus__details__address input[type='submit']{
+  background:#0e2978;
+  color:#fff;
+  text-align: center;
+  border:0;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+
+.offres-price__resgister__withus__input_group {
+  gap:4px;
+}
+
+
+@media (max-width:1199.98px){
+  .offres-price__resgister__withus{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media(max-width:991.98px){
+  .offres-price__resgister__withus{
+    margin-top: 40px;
+  }
+}
+
+
+/*================== End offers price page =================*/
