@@ -990,6 +990,7 @@ a {
 .latest-box  p{
   height:50px;
   overflow: hidden;
+  color:#000
 }
 
 .latest-box-title {
