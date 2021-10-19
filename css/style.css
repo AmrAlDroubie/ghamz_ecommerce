@@ -2794,7 +2794,9 @@ input[type="range"]:active::-webkit-slider-thumb {
   -o-border-radius: 5px;
 }
 
-.cart-total-box > a {
+.cart-total-box  button {
+  width:100%;
+  border:0;
   height: 30px;
   background: #0e2978;
   border-radius: 7px;
