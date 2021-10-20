@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <!-- font  awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- ltr -->
+    <link rel="stylesheet" href="../css/style_ltr.css">
+</head>
+
+<body>
+
+    <!-- complete information alert -->
+    <div class="complete-account-info">
+        <p>
+            من فضلك قم بتعديل بيانات
+            العنوان الخاصة بك<br>
+        </p>
+        <a href="#" class='m-color d-flex justify-content-center align-items-center ms-auto'>تعديل</a>
+        <button>
+            <i class="fas fa-info-circle"></i>
+        </button>
+    </div>
+
+
+
+    <!-- Start store filter -->
+    <section class="store-filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-12">
+                    <div
+                        class="filter-products d-flex flex-lg-row flex-column justify-content-lg-start justify-content-center align-items-lg-center">
+                        <div class="all-sections">
+                            <button>
+                                <span>جميع الأقسام</span>
+                                <i class='fas fa-caret-down'></i>
+                            </button>
+                            <ul>
+                                <li>
+                                    <span class='sub-list-title d-block'>منتج</span>
+                                    <ul class='sub-list'>
+                                        <span class="mobile-close-sub-list m-color d-lg-none d-block"><i
+                                                class="fas fa-arrow-left"></i></span>
+                                        <li>العنوان</li>
+                                        <li><a href="#">منتج فرعي 1</a></li>
+                                        <li><a href="#">منتج فرعي 2</a></li>
+                                        <li><a href="#">منتج فرعي 3</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class='sub-list-title d-block'>منتج</span>
+                                    <ul class='sub-list'>
+                                        <span class="mobile-close-sub-list m-color d-lg-none d-block"><i
+                                                class="fas fa-arrow-left"></i></span>
+                                        <li>العنوان</li>
+                                        <li><a href="#">منتج فرعي 1</a></li>
+                                        <li><a href="#">منتج فرعي 2</a></li>
+                                        <li><a href="#">منتج فرعي 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><span class='sub-list-title d-block'>منتج</span>
+                                    <ul class='sub-list'>
+                                        <span class="mobile-close-sub-list m-color d-lg-none d-block"><i
+                                                class="fas fa-arrow-left"></i></span>
+                                        <li>العنوان</li>
+                                        <li><a href="#">منتج فرعي 1</a></li>
+                                        <li><a href="#">منتج فرعي 2</a></li>
+                                        <li><a href="#">منتج فرعي 3</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="products-brand">
+                            <button>
+                                <span>تصفح بالعلامة التجارية</span>
+                                <i class='fas fa-caret-down'></i>
+                            </button>
+                            <ul>
+                                <li><a href="#">منتج 1</a></li>
+                                <li><a href="#">منتج 2</a></li>
+                                <li><a href="#">منتج 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="offers-products">
+                            <button>
+                                <span>العروض الأسبوعية</span>
+                                <i class='fas fa-caret-down'></i>
+                            </button>
+                            <ul>
+                                <li><a href="#">منتج 1</a></li>
+                                <li><a href="#">منتج 2</a></li>
+                                <li><a href="#">منتج 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12 d-flex flex-lg-row flex-column">
+                    <div class="store-filter-box  w-lg-auto w-100">
+                        <form action="">
+                            <select name="" id="" class='store-select store-select-1 d-block ms-auto'>
+                                <option value="" disabled selected>فرز حسب</option>
+                                <option value="">السعر تصاعديا</option>
+                                <option value="">السعر تنازليا</option>
+                                <option value="">أحدث المنتجات</option>
+                            </select>
+                        </form>
+                    </div>
+
+
+                    <div class="store-filter-box ms-lg-1">
+                        <form action="">
+                            <select class='store-select d-block'>
+                                <option value="" selected disabled>عدد المنتجات المراد عرضها</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End store filter -->
+
+
+
+    <!-- Start result filter -->
+    <section class="result-filter">
+        <div class="container">
+            <div class="row p-0">
+                <div class="col-lg-3 col-12 p-0">
+                    <div class="result-filter-panel">
+                        <div class="result-panel-title ">
+                            تصفية النتائج
+                        </div>
+                        <div class="filter-box-lists">
+                            <div class="close-list-mobile d-lg-none d-block"><i class="fas fa-angle-double-right"></i>
+                            </div>
+                            <div class="filter-box">
+                                <span>الماركة</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="" id="ICOM">
+                                            <label for="ICOM">ICOM</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">Motorola</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Boafeing">
+                                            <label for="Boafeing">Boafeing</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Kenwood">
+                                            <label for="Kenwood">Kenwood</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="TYT">
+                                            <label for="TYT">TYT</label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="filter-box">
+                                <div class="container-range">
+                                    <div class="slider-track"></div>
+                                    <input type="range" min="1000" max="10000" value="0" id="slider-1"
+                                        oninput="slideOne()">
+                                    <input type="range" min="1000" max="10000" value="10000" id="slider-2"
+                                        oninput="slideTwo()">
+                                </div>
+                                <div class="values d-flex justify-content-between">
+                                    <span id="range1">
+                                        0
+                                    </span>
+                                    <span id="range2">
+                                        100
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="filter-box">
+                                <span>فرز حسب</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="" id="ICOM">
+                                            <label for="ICOM">السعر تصاعديا</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">السعر تنازليا</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Boafeing">
+                                            <label for="Boafeing">أحدث المنتجات</label>
+                                        </li>
+
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="filter-box">
+                                <span>لوحة المفاتيح</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="" id="ICOM">
+                                            <label for="ICOM">NON</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">Full</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Boafeing">
+                                            <label for="Boafeing">Limit</label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="filter-box">
+                                <span>التكرار</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="" id="ICOM">
+                                            <label for="ICOM">VHF</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">UHF</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Boafeing">
+                                            <label for="Boafeing">VHF OR UHF</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Boafeing">
+                                            <label for="Boafeing">Dual band</label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="filter-box">
+                                <span>القنوات</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="" id="ICOM">
+                                            <label for="ICOM">128</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">16</label>
+                                        </li>
+
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="filter-box">
+                                <span>البروتوكول</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="" id="ICOM">
+                                            <label for="ICOM">Analog</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">Digital</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" id="Motorola">
+                                            <label for="Motorola">Digital Analog</label>
+                                        </li>
+
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="filter-box">
+                                <span>VOX</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="vox" id="ICOM">
+                                            <label for="ICOM">Yes</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="vox" id="Motorola">
+                                            <label for="Motorola">No</label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="filter-box">
+                                <span>إرسال الإشارات</span>
+                                <i class='far fa-minus-square'></i>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="vox" id="ICOM">
+                                            <label for="ICOM">Simplex / Semi-Duplex</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="vox" id="Motorola">
+                                            <label for="Motorola">MDC </label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-12">
+                    <div class="row ">
+
+                        <!-- Box -->
+                        <div class="col-lg-3 col-6 p-lg-2 p-1">
+                            <div class="product-box w-100">
+                                <img src="../images/latest_box.png" alt="">
+                                <div class="product-box-title">
+                                    <span>اسم المنتج</span>
+                                    <span>200$</span>
+                                </div>
+                                <p>
+                                    هذا جهاز لاسلكي يعمل على مسافة مئة متر بسرعة كبير جدا ودون تقطيش وجودة صوت كبيرة
+                                </p>
+                                <div class="product-box-details flex-lg-row flex-column">
+                                    <a href="#" class='d-lg-block d-none'>التفاصيل</a>
+                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="far fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box -->
+                        <div class="col-lg-3 col-6 p-lg-2 p-1">
+                            <div class="product-box w-100">
+                                <img src="../images/latest_box.png" alt="">
+                                <div class="product-box-title">
+                                    <span>اسم المنتج</span>
+                                    <span>200$</span>
+                                </div>
+                                <p>
+                                    تليفون ارضي فعال ذي صوت عال ويعمل كلا سلكي يحتاج شحن ساعة فقط
+                                </p>
+                                <div class="product-box-details flex-lg-row flex-column">
+                                    <a href="#" class='d-lg-block d-none'>التفاصيل</a>
+                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="far fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Box -->
+                        <div class="col-lg-3 col-6 p-lg-2 p-1">
+                            <div class="product-box w-100">
+                                <img src="../images/latest_box.png" alt="">
+                                <div class="product-box-title">
+                                    <span>اسم المنتج</span>
+                                    <span>200$</span>
+                                </div>
+                                <p>
+                                    تليفون ارضي فعال ذي صوت عال ويعمل كلا سلكي يحتاج شحن ساعة فقط
+                                </p>
+                                <div class="product-box-details flex-lg-row flex-column">
+                                    <a href="#" class='d-lg-block d-none'>التفاصيل</a>
+                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="far fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Box -->
+                        <div class="col-lg-3 col-6 p-lg-2 p-1">
+                            <div class="product-box w-100">
+                                <img src="../images/latest_box.png" alt="">
+                                <div class="product-box-title">
+                                    <span>اسم المنتج</span>
+                                    <span>200$</span>
+                                </div>
+                                <p>
+                                    تليفون ارضي فعال ذي صوت عال ويعمل كلا سلكي يحتاج شحن ساعة فقط
+                                </p>
+                                <div class="product-box-details flex-lg-row flex-column">
+                                    <a href="#" class='d-lg-block d-none'>التفاصيل</a>
+                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="far fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box -->
+                        <div class="col-lg-3 col-6 p-lg-2 p-1">
+                            <div class="product-box w-100">
+                                <img src="../images/latest_box.png" alt="">
+                                <div class="product-box-title">
+                                    <span>اسم المنتج</span>
+                                    <span>200$</span>
+                                </div>
+                                <p>
+                                    تليفون ارضي فعال ذي صوت عال ويعمل كلا سلكي يحتاج شحن ساعة فقط
+                                </p>
+                                <div class="product-box-details flex-lg-row flex-column">
+                                    <a href="#" class='d-lg-block d-none'>التفاصيل</a>
+                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="far fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End result filter -->
+
+
+    <!-- Start store-next-prev -->
+    <section class="store-next-prev">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="store-next-prev-box d-flex justify-content-center">
+                        <a href="#" class='store-pag-btn store-pag-prev'>
+                            <i class='fas fa-angle-double-left'></i>
+                            <span>السابق</span>
+                        </a>
+                        <a href="#" class='store-pag-btn store-pag-next'>
+                            <span>التالي</span>
+                            <i class="fas fa-angle-double-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End store-next-prev -->
+
+
+
+
+
+
+
+
+
+
+    <!-- JQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+
+
+        // range input custom
+
+        window.onload = function () {
+            slideOne();
+            slideTwo();
+        }
+
+        let sliderOne = document.getElementById("slider-1");
+        let sliderTwo = document.getElementById("slider-2");
+        let displayValOne = document.getElementById("range1");
+        let displayValTwo = document.getElementById("range2");
+        let minGap = 0;
+        let sliderTrack = document.querySelector(".slider-track");
+        let sliderMaxValue = document.getElementById("slider-1").max;
+
+        function slideOne() {
+            if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+                sliderOne.value = parseInt(sliderTwo.value) - minGap;
+            }
+            displayValOne.textContent =   sliderOne.value + " " + "egp"  
+            fillColor();
+        }
+        function slideTwo() {
+            if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+                sliderTwo.value = parseInt(sliderOne.value) + minGap;
+            }
+            displayValTwo.textContent = sliderTwo.value + " "  + "egp"  
+            fillColor();
+        }
+        function fillColor() {
+            percent1 = (sliderOne.value / sliderMaxValue) * 100;
+            percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+            sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #0e2978 ${percent1}% , #0e2978 ${percent2}%, #dadae5 ${percent2}%)`;
+        }
+
+
+
+
+        // text ...
+        const product_boxes = document.querySelectorAll(".product-box p");
+        let content = Array();
+        product_boxes.forEach(ele => {
+            for (let i = 0; i < product_boxes.length; i++) {
+                content[i] = product_boxes[i].textContent;
+                product_boxes[i].textContent = content[i].trim().slice(0, 20) + "...";
+            }
+
+        })
+
+        // filters
+
+        $(".all-sections button , .products-brand button , .offers-products button").on('click', function () {
+            $(this).siblings('ul').slideToggle(100);
+            $(this).children("i").toggleClass("rotate");
+
+        })
+
+
+        $('.sub-list-title').parent('li').hover(function () {
+            $(this).children("ul").css('display', 'block')
+        }, function () {
+            $(this).children("ul").css('display', 'none')
+        })
+
+
+        $(".mobile-close-sub-list").click(function () {
+            $(this).parent('ul').hide();
+        })
+
+
+
+
+
+        $(".filter-box").click(function () {
+
+            $(this).children("form").slideToggle(200)
+        })
+
+        $(".filter-box form").click(function (e) {
+            e.stopPropagation()
+        })
+
+
+
+        if ($(window).width() <= 998) {
+            const lists_width = "-" + $(".filter-box-lists").width();
+            $(".filter-box-lists").css("right", lists_width + "px")
+
+            $(".result-panel-title").click(function () {
+                $(".filter-box-lists").animate({
+                    "right": "0",
+                }, 200)
+                $(".filter-box-lists").css({
+                    "display": "block",
+                })
+                $("body").css("overflow-y", 'hidden')
+            })
+
+            $('.close-list-mobile').click(function () {
+                $(".filter-box-lists").animate({
+                    "right": lists_width,
+                }, 200)
+                $("body").css("overflow-y", 'auto')
+
+            })
+        }
+
+        $(".product-box").click(function () {
+            window.location = $(this).find("a.d-none").attr('href');
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

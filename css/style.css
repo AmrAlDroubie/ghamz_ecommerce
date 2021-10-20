@@ -1587,6 +1587,7 @@ a {
 .filter-box form {
   width: 100%;
   margin-top: 10px;
+  display:none
 }
 
 .filter-box form select {
@@ -1689,7 +1690,7 @@ a {
   color: #fff;
   border-radius: 25px;
   margin-right: 6px;
-  margin-left: 5px;
+  margin-left: 6px;
 }
 
 .product-box-details a:nth-of-type(3) {
@@ -2696,7 +2697,7 @@ input[type="range"]:active::-webkit-slider-thumb {
 /* Start shipping */
 
 .shipping-cart-box {
-  margin: 20px 0 20px;
+  margin: 20px 0 ;
   min-height: 55px;
   width: 355px;
   max-width: 95%;

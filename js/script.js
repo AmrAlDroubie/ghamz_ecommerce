@@ -1,6 +1,6 @@
 // Start navbar
 const body = document.querySelector("body");
-const nav = document.createElement("nav");
+let nav = document.createElement("nav");
 nav.innerHTML = ` <nav class='navbar navbar-expand-xl'>
 <div class="container p-1">
     <a href="./index.html" class="navbar-brand"><img src="images/logo.svg" alt="logo"></a>
@@ -54,8 +54,8 @@ footer.innerHTML = `
             <p class="h2">سجل الان</p>
             <p class="h4">في متجر غمز</p>
             <div class="footer-signment-btns">
-                <a href="./login.html">تسجيل الدخول</a>
-                <a href="./newuser.html">مستخدم جديد</a>
+                <a href="./login.html" >تسجيل الدخول</a>
+                <a href="./newuser.html" >مستخدم جديد</a>
             </div>
         </div>
     </div>
@@ -125,6 +125,8 @@ footer.innerHTML = `
 <!-- End footer -->
 `;
 body.append(footer);
+nav.innerHTML = null;
+
 // End footer
 
 // equal boxes in privacy
@@ -150,24 +152,42 @@ try{
     boxes[1].style.backgroundImage = 'url(' + boxes[1].getAttribute('data-background-link') + ')';
     boxes[2].style.backgroundImage = 'url(' + boxes[2].getAttribute('data-background-link') + ')';
     boxes[3].style.backgroundImage ='url(' + boxes[3].getAttribute('data-background-link') + ')';
-}
-catch{
-    console.log('erro')
-}
+}catch{}
+ 
+
 
 
 // complete account info box
 $(".complete-account-info button").click(function(){
-    
-   $(this).parent().toggleClass("complete-account-info-active");
-   if($(this).parent().hasClass("complete-account-info-active")){
-    $(this).parent().animate({
-        right:0
-    },500)
-   }
-   else{
-        $(this).parent().animate({
-        right: '-'  + $(this).parent().innerWidth() - 5 + 'px'
-    },500)
-   }
+    if($("body").css("direction") == 'rtl'){
+        $(this).parent().toggleClass("complete-account-info-active");
+        if($(this).parent().hasClass("complete-account-info-active")){
+         $(this).parent().animate({
+             right:0
+         },500)
+        }
+        else{
+             $(this).parent().animate({
+             right: '-'  + $(this).parent().innerWidth() - 5 + 'px'
+         },500)
+        }
+    }else{
+        $(this).parent().toggleClass("complete-account-info-active");
+        if($(this).parent().hasClass("complete-account-info-active")){
+         $(this).parent().animate({
+             left:0
+         },500)
+        }
+        else{
+             $(this).parent().animate({
+             left: '-'  + $(this).parent().innerWidth() - 5 + 'px'
+         },500)
+        }
+    }
+  
 })
+
+
+
+nav.innerHTML=null;
+footer.innerHTML = null;
