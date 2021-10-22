@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <!-- font  awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- ltr -->
+    <link rel="stylesheet" href="../css/style_ltr.css">
+</head>
+
+<body>
+
+    <div class="my-orders">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="my-orders__nav__list">
+                        <ul>
+                            <li><a href="myaccount.html"><i class='fas fa-user'></i><span>حسابي</span></a></li>
+                            <li><a href="myorders.html" class='active'><i
+                                        class='fas fa-box-check'></i><span>طلباتي</span></a></li>
+                            <li><a href="offers_price.html"><i class="fas fa-donate"></i><span>عروض الأسعار</span></a>
+                            </li>
+                            <li><a href="#"><i class='fas fa-map-marker-alt'></i><span>معلومات العنوان</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="my-orders__content">
+                        <p class="my-orders__content__title">
+                            طلباتي
+                        </p>
+                        <div class="my-orders__content__table table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>id</th>
+                                        <th>التاريخ</th>
+                                        <th>الحالة</th>
+                                        <th>الإجمالي</th>
+                                        <th>عرض الطلب</th>
+                                        <th>عرض الفاتورة</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2/2/2020</td>
+                                        <td class='cancel-order'>ملغى</td>
+                                        <td>200$</td>
+                                        <td>
+                                            <a href="#"><img src="../images/user_info_show_order.svg" alt="show order"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><img src="../images/user_info_show_invoice.svg"
+                                                    alt="show invoice"></a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2/2/2020</td>
+                                        <td class='inprogress-order'>قيد التنفيذ</td>
+                                        <td>200$</td>
+                                        <td>
+                                            <a href="#"><img src="../images/user_info_show_order.svg" alt="show order"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><img src="../images/user_info_show_invoice.svg"
+                                                    alt="show invoice"></a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2/2/2020</td>
+                                        <td class='closed-order'>مغلق</td>
+                                        <td>200$</td>
+                                        <td>
+                                            <a href="#"><img src="../images/user_info_show_order.svg" alt="show order"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><img src="../images/user_info_show_invoice.svg"
+                                                    alt="show invoice"></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -20,6 +20,11 @@ $(".dashboard-right-list a").on("click", function (e) {
  // open fixed menu
  document.querySelector('.open-menu').addEventListener("click", function () {
     document.querySelector(".dashboard-right").classList.toggle('active')
+    if(document.querySelector(".dashboard-right").classList.contains('active')){
+        document.querySelector('body').style.overflowY = 'hidden'
+    }else{
+        document.querySelector('body').style.overflowY = 'auto'
+    }
 })
 
 $(document).click(function(e){

@@ -3387,6 +3387,222 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 /*================== End offers price page =================*/
 
+/* =================== Start soluations page ====================*/
+.soluation-header{
+  background:url('../images/soluations_header.png') no-repeat ;
+  background-size: cover;
+  min-height: 430px;
+  color:#fff;
+  padding-top: 72px;
+  padding-bottom: 30px;
+}
+
+.soluation-header h1{
+  font-size: 35px;
+}
+
+.soluation-header p{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.soluation-header__content__btn{
+  border:1.5px solid #fff;
+  padding:8px 44px;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  font-weight: 600;
+  color:#fff;
+  font-size: 17px;
+}
+
+.soluation-header__content__btn:hover{
+  color:#fff;
+}
+
+@media screen and (max-width:768.98px){
+  .soluation-header{
+    text-align: center;
+  }
+}
+
+/* soluation about us */
+.soluation__about_us{
+  margin-top: 35px;
+}
+
+.soluation__section_title{
+  padding-bottom: 14px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 47px;
+  color:#0e2978;
+  text-align: center;
+  margin:auto;
+  position: relative;
+  border-bottom:2px solid #000;
+  width: calc(174px * 2);
+  margin-bottom: 60px;
+}
+
+.soluation__section_title::after{
+  content:"";
+  width:14px;
+  background: #fff;
+  height: 2px;
+  display: block;
+  position: absolute;
+  left:50%;
+  top:100%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.soluation__section_title::before{
+  content:"";
+  width: 5px;
+  height: 5px;
+  display: block;
+  background:#0e2978;
+  position: absolute;
+  left:50%;
+  top:100%;
+  z-index: 333;
+  transform:rotate(45deg) translateX(-50%);
+  -webkit-transform:rotate(45deg) translateX(-50%);
+  -moz-transform:rotate(45deg) translateX(-50%);
+  -ms-transform:rotate(45deg) translateX(-50%);
+  -o-transform:rotate(45deg) translateX(-50%);
+}
+
+.soluation__about_us_box{
+  border-radius: 27px;
+  -webkit-border-radius: 27px;
+  -moz-border-radius: 27px;
+  -ms-border-radius: 27px;
+  -o-border-radius: 27px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 10%);
+  min-height: 281px;
+  padding:26px 11px 10px;
+  margin-bottom: 40px;
+  
+}
+
+.soluation__about_us_box svg{
+  margin-bottom: 14px;
+}
+
+.soluation__about_us_box-title{
+  color:#0e2978;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.soluation__about_us_box-desc{
+  color:#838383;
+  font-size: 15px;
+  margin-top: 20px;
+  line-height: 29px;
+}
+
+
+/* soluation quality */
+.soluation-quality{
+  background:url('../images/sol_quality_back.png') no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  padding-top: 52px;
+  padding-bottom: 15px;
+}
+
+.soluation-quality h2{
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.soluation-quality p{
+  color:#EAEAEA;
+  font-size: 16px;
+  margin-top: 17px;
+  line-height: 30px;
+}
+
+@media screen and (min-width:769px){
+  .soluation-quality p{
+    width:611px;
+    max-width:100%
+  }
+}
+
+/* soluation individuals */
+.soluation__individuals{
+  margin-top: 40px;
+}
+
+.soluation__individuals__box{
+  min-height: 387px;
+  text-align: center;
+  border:1px solid #DFDFDF;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+
+.soluation__individuals__box img{
+  width:76px;
+  height: 64px;
+  margin:41px 0 50px;
+}
+
+.soluation__individuals__box p{
+  color:#0e2978;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.soluation-individuals__btn{
+  padding:10px 95px;
+  background:#0e2978;
+  border-radius: 28px;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  -ms-border-radius: 28px;
+  -o-border-radius: 28px;
+  color:#fff;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.soluation-individuals__btn:hover{
+  color:#0e2978;
+  border:1px solid #0e2978;
+  background:#fff
+}
+
+@media screen and (min-width:1000px){
+  .soluation__individuals__box p{
+    max-width:1024px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* =================== End soluations page ====================*/
+
 
 
 

@@ -140,14 +140,14 @@ html {
   margin-right: 0px;
 }
 
-.result-panel-title{
+.result-panel-title {
   padding-left: 15px;
   padding-right: 0;
 }
-.store-select{
+.store-select {
   background-position-x: right;
-  background-origin:content-box;
-  padding:0 12px;
+  background-origin: content-box;
+  padding: 0 12px;
 }
 
 @media (max-width: 998.98px) {
@@ -163,8 +163,6 @@ html {
     right: auto;
   }
 }
-
-
 
 /* ltr aboutus page */
 .swiper-button-next {
@@ -371,30 +369,38 @@ html {
   border-bottom-left-radius: unset;
 }
 
-
 /* Contact us page */
-.input-field select{
+.input-field select {
   background-position-x: right;
   background-origin: content-box;
-  padding:0 10px;
+  padding: 0 10px;
 }
 
 /* shopping cart page */
-.shipping-cart-box{
+.shipping-cart-box {
   padding: 0 12px 0 35px;
 }
-.shipping-cart-box select{
+.shipping-cart-box select {
   background-position-x: right;
   background-origin: content-box;
   padding: 0 12px;
 }
 
 /* login page */
-.login__remember_me__checkbox label{
+.login__remember_me__checkbox label {
   margin-right: 0;
   margin-left: 10px;
 }
-.new-user-box div a{
+.new-user-box div a {
   margin-right: 0;
   margin-left: 10px;
+}
+
+/* soluatons page */
+
+/* offers price page */
+.offres-price__resgister__withus__personal__info input,
+.offres-price__resgister__withus__details__address input {
+  padding-right: 0;
+  padding-left: 10px;
 }
