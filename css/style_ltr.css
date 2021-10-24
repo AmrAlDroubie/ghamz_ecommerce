@@ -232,7 +232,7 @@ html {
 @media (max-width: 998.98px) {
   .input-field:first-of-type {
     margin-right: auto;
-    margin-left: 0;
+    margin-left: auto;
   }
 }
 
@@ -245,6 +245,10 @@ html {
 .replace-return-item > span {
   margin-right: 22px;
   margin-left: 0;
+}
+
+.replace-return-item{
+  text-align: left;
 }
 
 /* new user page */
@@ -376,6 +380,41 @@ html {
   padding: 0 10px;
 }
 
+.send-message-box-image img {
+  transform: scaleX(-1);
+}
+
+@media (max-width: 998.98px) {
+  .send-message-box {
+    padding: 0;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .form-row {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .input-field {
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+  }
+
+  .input-field:first-of-type {
+    margin-left: auto;
+  }
+
+  .send-message-box textarea {
+    margin: 14px auto;
+    width: 95%;
+  }
+}
+
+
+
+
 /* shopping cart page */
 .shipping-cart-box {
   padding: 0 12px 0 35px;
@@ -396,7 +435,14 @@ html {
   margin-left: 10px;
 }
 
-/* soluatons page */
+/* soluations page */
+.soluation-header img{
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+}
 
 /* offers price page */
 .offres-price__resgister__withus__personal__info input,
@@ -404,3 +450,6 @@ html {
   padding-right: 0;
   padding-left: 10px;
 }
+
+
+

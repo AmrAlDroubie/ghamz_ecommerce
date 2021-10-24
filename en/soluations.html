@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,6 @@
     <!-- ltr -->
     <link rel="stylesheet" href="../css/style_ltr.css">
 </head>
-
 <body>
 
     <!-- Start navbar -->
@@ -65,6 +63,7 @@
     <!-- Start soluations header -->
     <header class="soluation-header">
         <div class="container">
+            <img src="../images/soluations_header.png" alt="">
             <div class="soluation-header__content">
                 <h1>
                     Tailored Communication Solutions<br>
@@ -198,8 +197,10 @@
     <section class="soluation__individuals">
         <div class="container">
             <h3 class="soluation__section_title">individuals</h3>
+            
             <div class="soluation__individuals__box">
-                <img src="../images/Logo_citc_new-image.png" class='soluation__individuals__box_img' alt="">
+                <img src="../images/soluation_individuals_back.png" alt="" class='soluation__individuals__box_back_img'>
+                <img src="../images/Logo_citc_new.svg" alt="">
                 <p class="soluation__individuals__box_desc">
                     Walkie-talkies and satellite phones
                     Emergency devices (PLB) and more of our products are also available for individuals in the Kingdom
@@ -211,6 +212,57 @@
         </div>
     </section>
     <!-- End soluation individuals -->
+
+
+    <!-- Start soluations other fields -->
+    <section class="soluation__other_fields">
+        <div class="container">
+            <h3 class='soluation__section_title'>Other fields of supply</h3>
+            <div class="soluation__flex_container align-items-center">
+                <div class="soluation__flex_column">
+                    <div class="soluation__other_fields__box">
+                        <a href="#">
+                            <img src="../images/soluation__other_fields__box_1.png" alt="">
+                            <p class='ms-4'>
+                                Furniture and office<br>supplies
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="soluation__flex_column">
+                    <div class="soluation__other_fields__box soluation__other_fields__box_two_col">
+                        <a href="#">
+                            <img src="../images/soluation__other_fields__box_2.png" alt="">
+                            <p class='ms-4'>
+                                Military and security<br> equipment
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="soluation__other_fields__box soluation__other_fields__box_two_col">
+                        <a href="#">
+                            <img src="../images/soluation__other_fields__box_3.png" alt="">
+                            <p class='justify-content-center'>
+                                laser products
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="soluation__flex_column">
+                    <div class="soluation__other_fields__box">
+                        <a href="#">
+                            <img src="../images/soluation__other_fields__box_4.png" alt="">
+                            <span>free quote</span>
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End soluations other fields -->
 
 
 
@@ -297,7 +349,6 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/script.js"></script>
     <script>
-
         const about_soluations_box = document.querySelectorAll(".soluation__about_us_box");
         window.addEventListener("load", _ => {
             const about_soluations_box_array = Array.from(about_soluations_box);
@@ -311,7 +362,5 @@
 
         })
     </script>
-
 </body>
-
 </html>
