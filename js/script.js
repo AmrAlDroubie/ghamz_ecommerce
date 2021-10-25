@@ -187,7 +187,9 @@ $(".complete-account-info button").click(function(){
   
 })
 
-
+$(".all-sections button , .products-brand button , .offers-products button").on('click', function (e){
+    e.preventDefault();
+})
 
 nav.innerHTML=null;
 footer.innerHTML = null;
