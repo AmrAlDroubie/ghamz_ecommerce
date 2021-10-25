@@ -131,8 +131,8 @@ a {
   background-color: #efefef;
   border-radius: 25px;
   overflow: hidden;
-  min-width: 25%;
-  margin-left: 20px;
+  min-width: 15%;
+  margin-left: 17px;
 }
 
 .nav-search input {
@@ -1083,11 +1083,16 @@ a {
   border: 1px solid #cccccc;
   display: flex;
   padding: 10px;
-  align-items: center;
+  align-items: flex-start;
+  min-height: 330px;
 }
 
 .complete-projects-box p {
   margin: 10px 14px;
+}
+
+.complete-projects-box img{
+  align-self:center
 }
 
 @media (max-width: 1198.98px) {
