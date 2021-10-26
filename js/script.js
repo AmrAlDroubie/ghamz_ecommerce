@@ -158,8 +158,9 @@ try{
 
 
 // complete account info box
-$(".complete-account-info button").click(function(){
-    if($("body").css("direction") == 'rtl'){
+$(".complete-account-info button").click(function(e){
+        e.preventDefault();
+        if($("body").css("direction") == 'rtl'){
         $(this).parent().toggleClass("complete-account-info-active");
         if($(this).parent().hasClass("complete-account-info-active")){
          $(this).parent().animate({

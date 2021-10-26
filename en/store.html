@@ -480,7 +480,6 @@
 
 
         // range input custom
-
         window.onload = function () {
             slideOne();
             slideTwo();
@@ -514,9 +513,6 @@
             sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #0e2978 ${percent1}% , #0e2978 ${percent2}%, #dadae5 ${percent2}%)`;
         }
 
-
-
-
         // text ...
         const product_boxes = document.querySelectorAll(".product-box p");
         let content = Array();
@@ -525,17 +521,14 @@
                 content[i] = product_boxes[i].textContent;
                 product_boxes[i].textContent = content[i].trim().slice(0, 20) + "...";
             }
-
         })
 
         // filters
-
         $(".all-sections button , .products-brand button , .offers-products button").on('click', function () {
             $(this).siblings('ul').slideToggle(100);
             $(this).children("i").toggleClass("rotate");
 
         })
-
 
         $('.sub-list-title').parent('li').hover(function () {
             $(this).children("ul").css('display', 'block')
@@ -543,14 +536,9 @@
             $(this).children("ul").css('display', 'none')
         })
 
-
         $(".mobile-close-sub-list").click(function () {
             $(this).parent('ul').hide();
         })
-
-
-
-
 
         $(".filter-box").click(function () {
 
@@ -560,8 +548,6 @@
         $(".filter-box div").click(function (e) {
             e.stopPropagation()
         })
-
-
 
         if ($(window).width() <= 998) {
             const lists_width = "-" + $(".filter-box-lists").width();
@@ -590,11 +576,9 @@
             window.location = $(this).find("a.d-none").attr('href');
         })
 
-
         $(".all-sections button , .products-brand button , .offers-products button").on('click', function (e) {
             e.preventDefault();
         })
-
     </script>
 
 </body>
