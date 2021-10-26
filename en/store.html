@@ -107,28 +107,22 @@
                 </div>
                 <div class="col-lg-5 col-12 d-flex flex-lg-row flex-column">
                     <div class="store-filter-box  w-lg-auto w-100">
-                        <form action="">
-                            <select name="" id="" class='store-select store-select-1 d-block ms-auto'>
-                                <option value="" disabled selected>فرز حسب</option>
-                                <option value="">السعر تصاعديا</option>
-                                <option value="">السعر تنازليا</option>
-                                <option value="">أحدث المنتجات</option>
-                            </select>
-                        </form>
+                        <select name="" id="" class='store-select store-select-1 d-block ms-auto'>
+                            <option value="" disabled selected>فرز حسب</option>
+                            <option value="">السعر تصاعديا</option>
+                            <option value="">السعر تنازليا</option>
+                            <option value="">أحدث المنتجات</option>
+                        </select>
                     </div>
 
 
                     <div class="store-filter-box ms-lg-1">
-                        <form action="">
-                            <select class='store-select d-block'>
-                                <option value="" selected disabled>عدد المنتجات المراد عرضها</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                            </select>
-                        </form>
-
+                        <select class='store-select d-block'>
+                            <option value="" selected disabled>عدد المنتجات المراد عرضها</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -153,7 +147,7 @@
                             <div class="filter-box">
                                 <span>الماركة</span>
                                 <i class='far fa-minus-square'></i>
-                                <form action="">
+                                <div class='form-container'>
                                     <ul>
                                         <li>
                                             <input type="checkbox" name="" id="ICOM">
@@ -176,7 +170,7 @@
                                             <label for="TYT">TYT</label>
                                         </li>
                                     </ul>
-                                </form>
+                                </div>
                             </div>
                             <div class="filter-box">
                                 <div class="container-range">
@@ -199,7 +193,7 @@
                             <div class="filter-box">
                                 <span>فرز حسب</span>
                                 <i class='far fa-minus-square'></i>
-                                <form action="">
+                                <div class='form-container'>
                                     <ul>
                                         <li>
                                             <input type="checkbox" name="" id="ICOM">
@@ -215,12 +209,12 @@
                                         </li>
 
                                     </ul>
-                                </form>
+                                </div>
                             </div>
                             <div class="filter-box">
                                 <span>لوحة المفاتيح</span>
                                 <i class='far fa-minus-square'></i>
-                                <form action="">
+                                <div class='form-container'>
                                     <ul>
                                         <li>
                                             <input type="checkbox" name="" id="ICOM">
@@ -235,12 +229,12 @@
                                             <label for="Boafeing">Limit</label>
                                         </li>
                                     </ul>
-                                </form>
+                                </div>
                             </div>
                             <div class="filter-box">
                                 <span>التكرار</span>
                                 <i class='far fa-minus-square'></i>
-                                <form action="">
+                                <div class='form-container'>
                                     <ul>
                                         <li>
                                             <input type="checkbox" name="" id="ICOM">
@@ -259,12 +253,12 @@
                                             <label for="Boafeing">Dual band</label>
                                         </li>
                                     </ul>
-                                </form>
+                                </div>
                             </div>
                             <div class="filter-box">
                                 <span>القنوات</span>
                                 <i class='far fa-minus-square'></i>
-                                <form action="">
+                                <div class='form-container'>
                                     <ul>
                                         <li>
                                             <input type="checkbox" name="" id="ICOM">
@@ -276,12 +270,12 @@
                                         </li>
 
                                     </ul>
-                                </form>
+                                </div>
                             </div>
                             <div class="filter-box">
                                 <span>البروتوكول</span>
                                 <i class='far fa-minus-square'></i>
-                                <form action="">
+                                <div class='form-container'>
                                     <ul>
                                         <li>
                                             <input type="checkbox" name="" id="ICOM">
@@ -297,12 +291,12 @@
                                         </li>
 
                                     </ul>
-                                </form>
+                                </div>
                             </div>
                             <div class="filter-box">
                                 <span>VOX</span>
                                 <i class='far fa-minus-square'></i>
-                                <form action="">
+                                <div class='form-container'>
                                     <ul>
                                         <li>
                                             <input type="checkbox" name="vox" id="ICOM">
@@ -313,12 +307,12 @@
                                             <label for="Motorola">No</label>
                                         </li>
                                     </ul>
-                                </form>
+                                </div>
                             </div>
                             <div class="filter-box">
                                 <span>إرسال الإشارات</span>
                                 <i class='far fa-minus-square'></i>
-                                <form action="">
+                                <div class='form-container'>
                                     <ul>
                                         <li>
                                             <input type="checkbox" name="vox" id="ICOM">
@@ -329,7 +323,7 @@
                                             <label for="Motorola">MDC </label>
                                         </li>
                                     </ul>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -504,14 +498,14 @@
             if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
                 sliderOne.value = parseInt(sliderTwo.value) - minGap;
             }
-            displayValOne.textContent =   sliderOne.value + " " + "egp"  
+            displayValOne.textContent = sliderOne.value + " " + "egp"
             fillColor();
         }
         function slideTwo() {
             if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
                 sliderTwo.value = parseInt(sliderOne.value) + minGap;
             }
-            displayValTwo.textContent = sliderTwo.value + " "  + "egp"  
+            displayValTwo.textContent = sliderTwo.value + " " + "egp"
             fillColor();
         }
         function fillColor() {
@@ -560,10 +554,10 @@
 
         $(".filter-box").click(function () {
 
-            $(this).children("form").slideToggle(200)
+            $(this).children("div").slideToggle(200)
         })
 
-        $(".filter-box form").click(function (e) {
+        $(".filter-box div").click(function (e) {
             e.stopPropagation()
         })
 
@@ -597,6 +591,9 @@
         })
 
 
+        $(".all-sections button , .products-brand button , .offers-products button").on('click', function (e) {
+            e.preventDefault();
+        })
 
     </script>
 

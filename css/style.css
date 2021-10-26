@@ -1594,13 +1594,13 @@ a {
   margin-top: 7px;
 }
 
-.filter-box form {
+.filter-box .form-container {
   width: 100%;
   margin-top: 10px;
   display: none;
 }
 
-.filter-box form select {
+.filter-box .form-container select {
   width: 100%;
   border: 0;
 }
@@ -1609,11 +1609,11 @@ a {
   height: 400px;
 }
 
-.filter-box form ul li {
+.filter-box .form-container ul li {
   margin-bottom: 7px;
 }
 
-.filter-box form label {
+.filter-box .form-container label {
   margin-right: 12px;
   cursor: pointer;
 }
