@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <!-- font  awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- ltr -->
+    <link rel="stylesheet" href="../css/style_ltr.css">
+</head>
+
+<body>
+
+
+    <!-- Start buy steps -->
+    <div class="container">
+        <div class="buy-steps d-flex justify-content-center">
+            <div class="d-flex flex-column">
+                <div class="buy-step-image">
+                    <img src="../images/buy_step_img_1.svg" alt="">
+                </div>
+                <span class='text-center'>معلومات الشحن</span>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="buy-step-image">
+                    <img src="../images/buy_step_img_2.svg" alt="">
+                </div>
+                <span class='text-center'>الدفع</span>
+            </div>
+        </div>
+    </div>
+    <!-- End buy steps -->
+
+    <!-- Start buy info -->
+    <section class="buy-info">
+        <div class="container">
+
+            <p class="buy-info-title">معلومات شخصية</p>
+            <div class="buy-input__group">
+                <div class="buy-input__box">
+                    <label for="">الاسم</label>
+                    <input type="text">
+                </div>
+                <div class="buy-input__box">
+                    <label for="">الايميل</label>
+                    <input type="email">
+                </div>
+            </div>
+            <p class="buy-info-title">معلومات الشحن</p>
+
+            <div class="buy-input__group">
+                <div class="buy-input__box">
+                    <label for="">بلد الشحن</label>
+                    <input type="text">
+                </div>
+                <div class="buy-input__box">
+                    <label for="">مدينة الشحن</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="buy-input__group">
+                <div class="buy-input__box">
+                    <label for="">حالة الشحن</label>
+                    <input type="text">
+                </div>
+                <div class="buy-input__box">
+                    <label for="">شارع الشحن</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="buy-input__group">
+                <div class="buy-input__box">
+                    <label for="">رقم موبايل االشحن</label>
+                    <input type="text">
+                </div>
+                <div class="buy-input__box">
+                    <label for="">هاتف الشحن</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="buy-input__group">
+                <div class="buy-input__box">
+                    <label for="">بطاقة بريدية للشحن</label>
+                    <input type="text">
+                </div>
+                <div class="buy-input__box buy-input__checkbox ">
+                    <input type="checkbox" class='buy-info__addmore-details' id='buy-info__addmore-details'>
+                    <label for="buy-info__addmore-details">إضافة تفاصيل فواتير أخرى</label>
+                </div>
+            </div>
+
+            <div class="buy-input__group">
+                <div class='buy-input__submit next-step-payment d-flex'>التالي</div>
+            </div>
+
+            <div class="buy-info__more d-none">
+                <div class="buy-input__group">
+                    <div class="buy-input__box">
+                        <label for="">رقم موبايل االشحن</label>
+                        <input type="text">
+                    </div>
+                    <div class="buy-input__box">
+                        <label for="">هاتف الشحن</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="buy-input__group">
+                    <div class="buy-input__box">
+                        <label for="">رقم موبايل االشحن</label>
+                        <input type="text">
+                    </div>
+                    <div class="buy-input__box">
+                        <label for="">هاتف الشحن</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="buy-input__group">
+                    <div class="buy-input__box">
+                        <label for="">رقم موبايل االشحن</label>
+                        <input type="text">
+                    </div>
+                    <div class="buy-input__box">
+                        <label for="">هاتف الشحن</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="buy-input__group">
+                    <div class="buy-input__box">
+                        <label for="">رقم موبايل االشحن</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class='buy-info__more__submit next-step-payment d-flex align-items-center justify-content-center'>
+                    تحديث</div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End buy info -->
+
+
+
+    <!-- Start payment info -->
+    <section class="payment-info d-none">
+        <div class="container">
+            <p class="payment-info-title text-center m-color fw-bold ">
+                معلومات الدفع
+            </p>
+            <div class="payment-back-btn ">عودة</div>
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-12">
+                    <div class="payment-info__box">
+                        <img src="../images/payment_info_1.svg" alt="bank transfer">
+                        <p>حوالية بنكية</p>
+                        <span class='payment-info__box__check'><i class="fas fa-check"></i></span>
+                        <div class="bank-transfer">
+
+                            <span class="bank-transfer-title d-block">الحساب</span>
+                            <span class="bank-transfer-data d-block text-end">Ghamz Trading Stablishment</span>
+
+                            <span class="bank-transfer-title d-block">رقم الحساب</span>
+                            <span class="bank-transfer-data d-block text-end">22652596000107</span>
+
+                            <span class="bank-transfer-title d-block">iban</span>
+                            <span class="bank-transfer-data d-block text-end">SA6910000022652596000107</span>
+
+
+                            <span class="bank-transfer-title d-block">عنوان البنك</span>
+                            <span class="bank-transfer-data d-block text-end">King Fahd Road Alaqiq 13515 Ryad Saudi
+                                Arabia</span>
+
+                            <span class="bank-transfer-title d-block">Swift Code</span>
+                            <span class="bank-transfer-data d-block text-end">ncbksaje614</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="payment-info__box">
+                        <img src="../images/payment_info_2.svg" alt="visa card">
+                        <span class='payment-info__box__check'><i class="fas fa-check"></i></span>
+                        <div class="payment-info__box__form">
+                            <input type="text" name="" id="" placeholder="1234 1234 1234 1234" class='input-card-num'>
+                            <input type="text" name="" id="" placeholder="mm / yy" class='input-card-month'>
+                            <input type="text" name="" id="" placeholder="cvc" class='input-card-cvc'>
+                            <input type="text" name="" id="" placeholder="Card Owner Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="payment-info__box">
+                        <img src="../images/payment_info_3.svg" alt="paypal">
+                        <span class='payment-info__box__check'><i class="fas fa-check"></i></span>
+                        <div class="payment-info__box__form">
+                            <input type="text" name="" id="" placeholder="1234 1234 1234 1234" class='input-card-num2'>
+                            <input type="text" name="" id="" placeholder="mm / yy" class='input-card-month2'>
+                            <input type="text" name="" id="" placeholder="cvc" class='input-card-cvc2'>
+                            <input type="text" name="" id="" placeholder="Card Owner Name">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-9 col-12 mx-auto">
+                <button class="submit-payment ">
+                    دفع
+                </button>
+            </div>
+            
+           
+
+        </div>
+    </section>
+    <!-- End payment info -->
+
+    <!-- JQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/cleave.min.js"></script>
+    <script>
+
+        $(".buy-info__addmore-details,buy-info__more__submit").change(function () {
+            $('.buy-info__more').toggleClass('d-none');
+            $('.buy-input__submit').toggleClass('d-none')
+        })
+
+
+
+        // validate
+        var card_num = new Cleave('.input-card-num', {
+            numericOnly: true,
+            blocks: [4, 4, 4, 4],
+        });
+
+        var date = new Cleave('.input-card-month', {
+            date: true,
+            datePattern: ['m', 'y']
+        });
+
+        var cvc = new Cleave('.input-card-cvc', {
+            blocks: [3],
+            numericOnly: true,
+        });
+
+        var card_num2 = new Cleave('.input-card-num2', {
+            numericOnly: true,
+            blocks: [4, 4, 4, 4],
+        });
+
+        var date2 = new Cleave('.input-card-month2', {
+            date: true,
+            datePattern: ['m', 'y']
+        });
+
+        var cvc2 = new Cleave('.input-card-cvc2', {
+            blocks: [3],
+            numericOnly: true,
+        });
+
+
+        // show payment part
+        $(".next-step-payment").on("click", function () {
+            $(".payment-info").removeClass("d-none");
+            $('.buy-info').addClass("d-none");
+            $(window).scrollTop(0);
+            $(".buy-steps div:last-child .buy-step-image img").attr('src', '../images/payment_step_active.svg');
+            $(".buy-steps div:last-child .buy-step-image").css({
+                background: '#0e2978',
+                border: 0,
+            })
+            $(".buy-steps div:last-child span").css({
+                color: '#0e2978'
+            })
+        })
+
+
+        // payment informations
+        $(".payment-info__box").on('click', function () {
+            if ($(this).hasClass('box-active')) {
+                console.log("ok")
+            } else {
+                $(".payment-back-btn").addClass("active");
+                $(this).parent().siblings('.col-12').children('.payment-info__box').hide();
+                $(this).addClass('box-active');
+            }
+
+        })
+
+        $(".payment-back-btn").on("click", function () {
+            $('.payment-info__box').parent().siblings('.col-12').children('.payment-info__box').show();
+            $('.payment-info__box').removeClass('box-active');
+            $(this).removeClass("active");
+        })
+
+        $('.payment-info__box').children(':not("img,p")').on('click', function (e) {
+            e.stopPropagation();
+        })
+
+
+
+
+    </script>
+</body>
+
+
+</html>

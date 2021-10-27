@@ -2818,30 +2818,30 @@ input[type="range"]:active::-webkit-slider-thumb {
   justify-content: center;
 }
 
-.buy-steps a span {
+.buy-steps  span {
   font-weight: bold;
 }
 
-.buy-steps a:first-child {
+.buy-steps div:first-child {
   margin-left: 30px;
 }
-.buy-steps a:last-child {
+.buy-steps div:last-child {
   margin-right: 30px;
 }
 
-.buy-steps a:first-child .buy-step-image {
+.buy-steps div:first-child .buy-step-image {
   background-color: #0e2978;
   margin: 10px auto;
 }
-.buy-steps a:last-child .buy-step-image {
+.buy-steps div:last-child .buy-step-image {
   border: 1px solid #b4b4b4;
   margin: 10px auto;
 }
 
-.buy-steps a:first-child span {
+.buy-steps div:first-child span {
   color: #0e2978;
 }
-.buy-steps a:last-child span {
+.buy-steps div:last-child span {
   color: #b4b4b4;
 }
 
@@ -2901,6 +2901,7 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-top: 20px;
   justify-content: center;
   align-items: center;
+  cursor:pointer;
 }
 
 .buy-info__more {
@@ -2941,6 +2942,142 @@ input[type="range"]:active::-webkit-slider-thumb {
   }
 }
 
+.payment-info-title{
+  font-size: 22px;
+  font-weight: bold;
+  margin:25px auto
+}
+
+.payment-info__box{
+  border:1px solid #0e2978;
+  border-radius: 10px;
+  min-height: 200px;
+  position: relative;
+  padding:50px 14px 30px;
+  cursor: pointer;
+  display:flex;
+  flex-direction: column;
+  transition: 0.4s;
+}
+
+@media(max-width:992px){
+  .payment-info__box{
+    margin-bottom: 50px; 
+  }
+}
+
+
+
+.payment-info__box img{
+  display: block;
+  margin:auto;
+}
+
+
+
+.payment-info__box p{
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.payment-info__box__check{
+  position: absolute;
+  top:-1px;
+  right:0;
+  width: 50px;
+  height: 50px;
+  background:#fff;
+  border-radius: 0 10px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#C5C5C5;
+  border:1px solid #C5C5C5;
+}
+
+.payment-info__box.box-active .payment-info__box__check{
+  border-color:#0e2978;
+  background:#0e2978;
+  color:#fff;
+}
+
+.payment-info__box__form{
+  margin-top: 35px;
+  display: none;
+}
+
+.payment-info__box.box-active .payment-info__box__form{
+  display: block;
+}
+
+
+
+.payment-info__box__form input{
+  width:100%;
+  border:1px solid #C4C4C4;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding:0 5px;
+  height: 35px;
+}
+
+.payment-info__box__form input:last-of-type{
+  margin-top: 35px;
+}
+
+.bank-transfer{
+  display:none
+}
+
+.payment-info__box.box-active .bank-transfer{
+  display:block
+}
+
+.bank-transfer-title{
+  color:#979797;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.bank-transfer-data{
+  color:#0e2978;
+  font-size: 15px;
+  margin-bottom: 13px;
+}
+
+.payment-back-btn{
+  width:150px;
+  max-width:95%;
+  background:#0e2978;
+  color:#fff;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding:5px 0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display:none;
+  cursor:pointer;
+}
+
+.payment-back-btn.active{
+  display:flex
+}
+
+.submit-payment{
+  background:#0e2978;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 16px;
+  border:0;
+  padding:5px 0;
+  margin-top: 20px;
+}
 /* ====================== End buy  page =========================== */
 
 /* ================= Start my orders page =============== */
