@@ -1646,6 +1646,7 @@ a {
   margin-bottom: 50px;
   transition: 0.2s;
   cursor: pointer;
+  padding-bottom: 13px;
 }
 
 .product-box:hover {
@@ -1665,6 +1666,7 @@ a {
   margin-top: 12px;
   padding-right: 11px;
   padding-left: 11px;
+  color:#000
 }
 
 .product-box-title span:last-of-type {
@@ -1672,13 +1674,21 @@ a {
   color: #0e2978;
 }
 
+.product-box h3{
+  font-size: 16px;
+  padding:10px 11px;
+}
+
 .product-box p {
   margin-top: 8px;
   margin-bottom: 21px;
   padding-right: 11px;
   padding-left: 11px;
-  font-size: 13px;
+  font-size: 14px;
   height: 20px;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .product-box-details {
@@ -4084,7 +4094,87 @@ body {
   color:#0e2978;
   margin-bottom: 30px;
 }
+
+
+
 /*================ End product details page =========================*/
+
+/* ==========================Start invoice user page ====================*/
+.invoice-user{
+  margin-top: 50px;
+}
+
+.sell-invoice-row{
+  gap:25px;
+}
+
+.invoice-user .my-orders__content__title{
+  margin-bottom: 25px;
+}
+
+.sell-invoice{
+  margin-bottom: 20px;
+  box-shadow: 0 3px 15px rgba(0 , 0 , 0 , 8%);
+  border-radius: 15px;
+  padding:11px 15px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.invoice-table-title{
+  border-bottom:1px solid #E8E8E8;
+  padding-bottom: 10px;
+  color:#0e2978;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  
+}
+
+.sell-invoice table{
+  width: 100%;
+  border-spacing: 0px 20px;
+  border-collapse: separate;
+}
+
+.sell-invoice th{
+  color:#9F9F9F;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.sell-invoice td{
+  font-weight: bold;
+}
+
+.invoice__your_products{
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 8%);
+  padding:11px 15px;
+  margin-bottom: 20px;
+}
+
+.invoice__your_products table{
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.invoice__your_products table th{
+  color:#9F9F9F;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.invoice__your_products table td{
+  color:#000;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/*============================ End invoice user page ========================*/
+
 
 /* Main classes */
 .main-hover:hover {

@@ -1468,3 +1468,62 @@ span.manage-about-us__table__desc_cell{
 }
 
 /* ================= End manage about us ===================== */
+
+
+/* ===================== Start delete product page ======================*/
+
+.delete-product {
+  margin-top: 100px;
+}
+
+.delete-product-box {
+  width: 454px;
+  max-width: 100%;
+  height: 225px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 10%);
+  margin: auto;
+  text-align: center;
+  padding-top: 45px;
+  border-radius: 26px;
+}
+
+.delete-product-box p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.delete-product-box span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.delete-product-box div {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.delete-product-box div a {
+  width: 140px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.delete-product-box div a:first-of-type {
+  color: #b6b6b6;
+  border: 1px solid #b6b6b6;
+  margin-left: 4px;
+}
+
+.delete-product-box div a:last-of-type {
+  background-color: #ff3838;
+  color: #fff;
+  margin-right: 4px;
+}
+
+/* ===================== End delete product page ======================*/

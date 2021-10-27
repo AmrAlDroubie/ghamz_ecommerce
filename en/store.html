@@ -340,6 +340,7 @@
                                     <span>اسم المنتج</span>
                                     <span>200$</span>
                                 </div>
+                                <h3>الماركة</h3>
                                 <p>
                                     هذا جهاز لاسلكي يعمل على مسافة مئة متر بسرعة كبير جدا ودون تقطيش وجودة صوت كبيرة
                                 </p>
@@ -359,6 +360,7 @@
                                     <span>اسم المنتج</span>
                                     <span>200$</span>
                                 </div>
+                                <h3>الماركة</h3>
                                 <p>
                                     تليفون ارضي فعال ذي صوت عال ويعمل كلا سلكي يحتاج شحن ساعة فقط
                                 </p>
@@ -379,6 +381,7 @@
                                     <span>اسم المنتج</span>
                                     <span>200$</span>
                                 </div>
+                                <h3>الماركة</h3>
                                 <p>
                                     تليفون ارضي فعال ذي صوت عال ويعمل كلا سلكي يحتاج شحن ساعة فقط
                                 </p>
@@ -399,6 +402,7 @@
                                     <span>اسم المنتج</span>
                                     <span>200$</span>
                                 </div>
+                                <h3>الماركة</h3>
                                 <p>
                                     تليفون ارضي فعال ذي صوت عال ويعمل كلا سلكي يحتاج شحن ساعة فقط
                                 </p>
@@ -418,6 +422,7 @@
                                     <span>اسم المنتج</span>
                                     <span>200$</span>
                                 </div>
+                                <h3>الماركة</h3>
                                 <p>
                                     تليفون ارضي فعال ذي صوت عال ويعمل كلا سلكي يحتاج شحن ساعة فقط
                                 </p>
@@ -513,15 +518,15 @@
             sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #0e2978 ${percent1}% , #0e2978 ${percent2}%, #dadae5 ${percent2}%)`;
         }
 
-        // text ...
-        const product_boxes = document.querySelectorAll(".product-box p");
-        let content = Array();
-        product_boxes.forEach(ele => {
-            for (let i = 0; i < product_boxes.length; i++) {
-                content[i] = product_boxes[i].textContent;
-                product_boxes[i].textContent = content[i].trim().slice(0, 20) + "...";
-            }
-        })
+        // // text ...
+        // const product_boxes = document.querySelectorAll(".product-box p");
+        // let content = Array();
+        // product_boxes.forEach(ele => {
+        //     for (let i = 0; i < product_boxes.length; i++) {
+        //         content[i] = product_boxes[i].textContent;
+        //         product_boxes[i].textContent = content[i].trim().slice(0, 20) + "...";
+        //     }
+        // })
 
         // filters
         $(".all-sections button , .products-brand button , .offers-products button").on('click', function () {
@@ -541,8 +546,8 @@
         })
 
         $(".filter-box").click(function () {
-
-            $(this).children("div").slideToggle(200)
+            $(this).children("div").slideToggle(200);
+            localStorage.openDrop = 'active';
         })
 
         $(".filter-box div").click(function (e) {
@@ -579,6 +584,11 @@
         $(".all-sections button , .products-brand button , .offers-products button").on('click', function (e) {
             e.preventDefault();
         })
+
+        if (localStorage['openDrop'] == 'active') {
+
+        }
+
     </script>
 
 </body>
