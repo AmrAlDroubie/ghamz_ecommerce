@@ -30,7 +30,7 @@ a {
 }
 
 .m-color {
-  color: #0e2978;
+  color: #0e2978 !important;
 }
 
 .complete-account-info {
@@ -4237,78 +4237,210 @@ body {
 /*================ End product details page =========================*/
 
 /* ==========================Start invoice user page ====================*/
-.invoice-user{
-  margin-top: 50px;
+.invoice-user_box_details{
+  border:1px solid #D9D9D9;
+  border-radius: 22px;
+  width: 480px;
+  max-width:100%;
+  padding:18px 27px;
+  min-height: 155px;
+  margin-top: 35px;
 }
 
-.sell-invoice-row{
-  gap:25px;
-}
-
-.invoice-user .my-orders__content__title{
-  margin-bottom: 25px;
-}
-
-.sell-invoice{
-  margin-bottom: 20px;
-  box-shadow: 0 3px 15px rgba(0 , 0 , 0 , 8%);
-  border-radius: 15px;
-  padding:11px 15px;
-  text-align: center;
-  font-size: 15px;
-}
-
-.invoice-table-title{
-  border-bottom:1px solid #E8E8E8;
-  padding-bottom: 10px;
-  color:#0e2978;
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
+.invoice-user_box_details li{
+  display:flex;
+  align-items: flex-start;
+  gap:15px;
+  margin-bottom: 10px;
   
 }
 
-.sell-invoice table{
-  width: 100%;
-  border-spacing: 0px 20px;
-  border-collapse: separate;
+.invoice-user_box_details li i{
+  color:#0e2978;
+  margin-top: 5px;
 }
 
-.sell-invoice th{
-  color:#9F9F9F;
-  font-weight: normal;
-  margin-bottom: 10px;
+.invoice-user_box_details li span{
+  color:#000
 }
 
-.sell-invoice td{
+.invoice-user_box_details li:last-child span{
+  color:#0e2978;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.invoice-user_box_details li:last-child span:last-child{
+  letter-spacing: 3px;
+}
+
+.invoice-user-content{
+  width:870px;
+  max-width:100%;
+  margin:40px auto;
+}
+
+@media (max-width:991.98px){
+  .invoice-user-content{
+    padding:0 25px;
+  }
+}
+
+.date-order{
+  border:1px solid #0e2978;
+  border-radius: 10px;
+  width: 260px;
+  height: 45px;
+  max-width:100%;
+}
+
+@media(max-width:768px){
+  .date-order{
+    width: 95%;
+    margin:5px auto;
+  }
+}
+
+
+.date-order span{
+  font-size: 17px;
   font-weight: bold;
 }
 
+.date-order span:first-child{
+  color:#525252;
+}
+
+.date-order span:last-child{
+  color:#0e2978;
+}
+
+.print_btn{
+  background:#0e2978;
+  border-radius: 10px;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  width:130px;
+  height: 45px;
+  gap:5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media(max-width:768px){
+  .print_btn{
+    width:95%;
+    margin:5px auto;
+  }
+}
+
+.invoice-user-details{
+  height: 70px;
+  border:1px solid #C0C0C0;
+  border-radius:10px;
+  padding:0 50px;
+  margin:12px 0;
+}
+
+.invoice-user-details_name{
+  display: flex;
+  gap:30px;
+}
+.invoice-user-details_name span:first-child{
+  color:#525252;
+  font-weight: bold;
+}
+
+.invoice-user-details_name span:last-child{
+  color:#0e2978;
+  font-weight: bold;
+}
+
+.invoice-user-details__ship{
+  border:1px solid #C0C0C0;
+  border-radius: 10px;
+  padding:18px;
+}
+
+.invoice-user-details__ship p{
+  font-size: 16px;
+  font-weight: bold;
+  color:#0e2978;
+  margin-bottom: 10px;
+}
+
+.invoice-user-details__ship li{
+  display:flex;
+  align-items:center;
+  gap:27px;
+}
+
+.invoice-user-details__ship li{
+  color:#0e2978;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.invoice-seprator{
+  width:2px;
+  height: 15px;
+  background:#0e2978;
+  border-radius: 2px;
+  display:block;
+}
+
+.invoice-user-details__ship li span:first-child{
+  color:#525252;
+  
+}
+
+.invoice-user-details__ship li span:nth-child(2){
+  color:#0e2978;
+  font-weight: bold;
+}
+
+@media(min-width:992px){
+  .invoice-user-details__ship{
+    width:50%;
+  }
+}
+
 .invoice__your_products{
-  border-radius: 15px;
+  margin-top: 45px;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 8%);
-  padding:11px 15px;
-  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.invoice__your_products p{
+  font-size: 17px;
+  font-weight: bold;
+  color:#0e2978;
+  text-align:center;
+  border-bottom:1px solid #E8E8E8;
+  padding:10px;
 }
 
 .invoice__your_products table{
   width: 100%;
-  text-align: center;
   border-collapse: separate;
-  border-spacing: 0 15px;
+  border-spacing:0 13px;
+  text-align: center;
+  padding:0 15px;
 }
 
-.invoice__your_products table th{
+.invoice__your_products th{
   color:#9F9F9F;
-  font-weight: normal;
-  font-size: 15px;
 }
 
-.invoice__your_products table td{
+.invoice__your_products td{
   color:#000;
   font-weight: bold;
-  font-size: 15px;
 }
+
+
 
 /*============================ End invoice user page ========================*/
 

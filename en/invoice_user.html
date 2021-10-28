@@ -20,84 +20,147 @@
 <body>
 
     <section class="invoice-user">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="my-orders__nav__list">
-                        <ul>
-                            <li>
-                                <a href="myaccount.html" class='active'><i
-                                        class='fas fa-user'></i><span>حسابي</span></a>
-                            </li>
-                            <li><a href="myorders.html"><i class='fas fa-box-check'></i><span>طلباتي</span></a></li>
-                            <li><a href="offers_price.html"><i class="fas fa-donate"></i><span>عروض الأسعار</span></a>
-                            </li>
-                            <li><a href="#"><i class='fas fa-map-marker-alt'></i><span>معلومات العنوان</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <p class="my-orders__content__title">عرض الفاتورة</p>
-                    <div class="row sell-invoice-row">
-                        <!-- sell invoice -->
-                        <div class="sell-invoice col-lg-4 col-12">
-                            <p class='invoice-table-title'>فاتورة مبيعات ضريبة القيمة المضافة</p>
-                            <table>
-                                <tr>
-                                    <th>مرجع الفاتورة</th>
-                                    <th>التاريخ</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>2/2/2020</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="invoice__your_products col-lg-7 col-12 table-responsive">
-                            <p class='invoice-table-title'>منتجاتك</p>
-                            <table>
-                                <tr>
-                                    <th>id</th>
-                                    <th>الاسم</th>
-                                    <th>الكمية</th>
-                                    <th>السعر </th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>ebvrwe1</td>
-                                    <td>2</td>
-                                    <td>340</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-
-                    <!-- invoice details -->
-                    <div class="offers-price__data__invoice_details mt-2">
-                        <ul class='d-flex justify-content-between fw-bold m-color fw-bold'>
-                            <li>إضافة قيمة الضرائب</li>
-                            <li>15%</li>
-                        </ul>
-                        <ul class='d-flex justify-content-between fw-bold m-color fw-bold'>
-                            <li>الشحن</li>
-                            <li>20 Ryal</li>
-                        </ul>
-                        <hr>
-                        <ul class='d-flex justify-content-between fw-bold '>
-                            <li>الشحن</li>
-                            <li>20 Ryal</li>
-                        </ul>
-                    </div>
+        <div class="container-xl">
+            <div class="d-flex flex-md-nowrap flex-wrap">
+                <img src="../images/logo.svg" alt="" class='mx-md-0 mx-auto my-lg-0 my-4'>
+                <div class="invoice-user_box_details ms-auto me-lg-0 me-auto ">
+                    <ul>
+                        <li><i class='fas fa-map-marker-alt'></i><span>King Fahd Road (Service), opposite the Saudi
+                                German Hospital, Al-Malqa District, Riyadh, Kingdom of Saudi Arabia</span></li>
+                        <li><i class='fas fa-phone'></i><span>+966 11 2200 888</span></li>
+                        <li><span>Vate Id</span><span>0515618528265195912600</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
+        <div class="invoice-user-content">
+            <div class="d-flex flex-md-row flex-column justify-content-between">
+                <div class="date-order d-flex justify-content-evenly align-items-center">
+                    <span>Date Order</span>
+                    <span>2/2/2020</span>
+                </div>
+                <div class="print_btn">
+                    <i class="fas fa-print"></i>
+                    <span>print</span>
+                </div>
+            </div>
+            <div class="invoice-user-details d-flex justify-content-between align-items-center">
+                <div class="invoice-user-details_name">
+                    <span>Name</span>
+                    <span>John Mersy</span>
+                </div>
+                <div class="invoice-user-details_name invoice-user-details_email">
+                    <span>Email</span>
+                    <span>A@Gmail.Com</span>
+                </div>
+            </div>
+            <div class="d-flex flex-lg-row flex-column gap-2">
+                <div class="invoice-user-details__ship">
+                    <p class="invoice-user-details__ship_title">Invoice To</p>
+                    <ul class="invoice-user-details__ship_country">
+                        <li>
+                            <span>Country</span>
+                            <span>Syria</span>
+                            <span class='invoice-seprator'></span>
+                            <span>Homs</span>
+                            <span>City</span>
+                            <span>Street</span>
+                        </li>
+                        <li>
+                            <span>Mobile</span>
+                            <span>95951115231</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="invoice-user-details__ship">
+                    <p class="invoice-user-details__ship_title">Ship To</p>
+                    <ul class="invoice-user-details__ship_country">
+                        <li>
+                            <span>Country</span>
+                            <span>Syria</span>
+                            <span class='invoice-seprator'></span>
+                            <span>Homs</span>
+                            <span>City</span>
+                            <span>Street</span>
+                        </li>
+                        <li>
+                            <span>Mobile</span>
+                            <span>95951115231</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="invoice__your_products col-12 table-responsive">
+                <p class='invoice-table-title'>Your Products</p>
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>invoice</th>
+                        <th>price </th>
+                    </tr>
+                    <!-- table row -->
+                    <tr>
+                        <td>1</td>
+                        <td>ebvrwe1</td>
+                        <td>2</td>
+                        <td><a href="#" class='m-color'>View</a> </td>
+                        <td>340</td>
+                    </tr>
+                    <!-- table row -->
+                    <tr>
+                        <td>1</td>
+                        <td>ebvrwe1</td>
+                        <td>2</td>
+                        <td><a href="#" class='m-color'>View</a> </td>
+                        <td>340</td>
+                    </tr>
+                    <!-- table row -->
+                    <tr>
+                        <td>1</td>
+                        <td>ebvrwe1</td>
+                        <td>2</td>
+                        <td><a href="#" class='m-color'>View</a> </td>
+                        <td>340</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- invoice details -->
+            <div class="offers-price__data__invoice_details mt-2">
+                <ul class='d-flex justify-content-between fw-bold m-color fw-bold'>
+                    <li>Subtotal</li>
+                    <li>15%</li>
+                </ul>
+                <ul class='d-flex justify-content-between fw-bold m-color fw-bold'>
+                    <li>Shipping</li>
+                    <li>20 Ryal</li>
+                </ul>
+                <ul class='d-flex justify-content-between fw-bold m-color fw-bold'>
+                    <li>Rate</li>
+                    <li>20%</li>
+                </ul>
+                <hr>
+                <ul class='d-flex justify-content-between fw-bold '>
+                    <li>Order Total</li>
+                    <li>1254$</li>
+                </ul>
+            </div>
+        </div>
     </section>
+
+
 
 
     <!-- JQuery -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/script.js"></script>
+    <script>
+        $(".print_btn").on('click', function () {
+            window.print();
+        })
+    </script>
 </body>
 
 </html>
