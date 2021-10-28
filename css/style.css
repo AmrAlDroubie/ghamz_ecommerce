@@ -4036,9 +4036,6 @@ input[type="range"]:active::-webkit-slider-thumb {
     margin-bottom: 70px !important;
   }
 }
-body {
-  height: 6000px;
-}
 
 .product-about-box {
   max-height: 600px;
