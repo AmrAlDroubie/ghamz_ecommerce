@@ -1,0 +1,401 @@
+/* ====================== Start dashboard ====================== */
+body{
+    direction:ltr !important;
+}
+.dashboard-right-list li:first-child a span:last-of-type {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.dashboard-right-list a img {
+  margin-right: 14px;
+  margin-left: 0;
+}
+
+.dashboard-right-list a i {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* left dashboard */
+.dashboard-left {
+  padding-left: 30px;
+  padding-right: 0;
+  left: 18%;
+  right: auto;
+}
+
+.dash-nav-input-search {
+  padding-left: 25px;
+  padding-right: 0;
+}
+
+/* Start dashboard  details */
+.latest-orders-table td a {
+  padding-left: 2px;
+  padding-right: 0;
+}
+
+
+
+.dash-all-orders span:first-of-type {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.dash-latest-rate {
+  padding-left: 15px;
+  padding-right: 27px;
+}
+
+.dash-rate-numbers .women span:first-of-type,
+.dash-rate-numbers .men span:first-of-type {
+  margin-right: 11px;
+  margin-left: 0;
+}
+
+.dash-rate-numbers a i {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+
+/* End dashboard  details */
+
+/* start trend box */
+
+
+/* End trend box */
+
+/* offers table */
+
+
+/* Responsive */
+
+@media (max-width: 992.98px) {
+  
+  .dashboard-right {
+    left: -70%;
+    right:auto;
+  }
+
+  .dashboard-right.active {
+    left: 0;
+    right:auto;
+  }
+
+  .dashboard-left {
+    padding-left: calc(1.5rem / 2);
+    padding-right: 0;
+  }
+
+  .open-menu {
+    right: 20px;
+    left:auto;
+  }
+  
+}
+
+@keyframes menu-open {
+  from {
+    left: -70%;
+    right: auto;
+  }
+  to {
+    left: 0;
+    right: auto;
+  }
+}
+
+@keyframes menu-close {
+  from {
+    left: 0;
+    right:auto
+  }
+  to {
+    left: -70%;
+    right: auto;
+  }
+}
+
+/* ====================== End dashboard ====================== */
+
+/* ============= Start dashboard sub categories ============= */
+
+
+.sub-cate-add-new i {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.sub-cates-table {
+  direction: ltr !important;
+}
+
+
+
+
+.sub-cates-table th:first-of-type {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.sub-cates-table td:first-child {
+  padding-right: 30px;
+  padding-left: 30px;
+ 
+}
+
+.sub-cates-table table tr:first-child td:first-child {
+  border-top-right-radius: 11px;
+}
+.sub-cates-table table tr:first-child td:last-child {
+  border-top-left-radius: 11px;
+}
+.sub-cates-table table tr:last-child td:first-child {
+  border-bottom-right-radius: 11px;
+}
+.sub-cates-table table tr:last-child td:last-child {
+  border-bottom-left-radius: 11px;
+}
+
+
+
+/* ============= End dashboard sub categories ============= */
+
+/* ================= Start dashboard products list =================== */
+/* start add search list products */
+
+.listproducts__search-input input {
+  padding-left: 25px;
+  padding-right: 0;
+}
+
+.listproducts__add-btn {
+  margin-left: 22px;
+  margin-right: 0;
+}
+
+.listproducts__add-btn i {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+/* End add search list products */
+
+/* Start table list products */
+
+
+
+
+.listproducts__table-inner thead th:first-of-type,
+.listproducts__table-inner tbody td:first-of-type {
+  padding-left: 33px;
+  padding-right: 0;
+}
+
+.listproducts__table-inner thead th:first-of-type,
+.listproducts__table-inner tbody td:first-of-type {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.listproducts__table-inner thead th:last-of-type,
+.listproducts__table-inner tbody td:last-of-type {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+
+.listproducts__table-inner-edit-btns a:first-child i {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.listproducts__table-inner-edit-btns a:last-child {
+  margin-left: 26px;
+  margin-right: 0;
+}
+
+/* End table list products */
+
+/* ================= End dashboard products list =================== */
+
+/* ================ Start add product page ========================= */
+/* Start details */
+
+.addproducts__details-box {
+  margin-right: 19px;
+  margin-left: 0;
+}
+
+
+@supports (appearance: none) {
+  .addproducts__details-box select {
+    background-position: right 50%;
+    background-origin: content-box;
+  }
+}
+
+.addproducts__details-box input:not([type="checkbox"]),
+.addproducts__details-box select {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+
+.addproducts__details-box input[type="checkbox"] + label {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.addproducts__details-box:last-child {
+  margin-right: 0;
+}
+
+/* Start add products info */
+
+
+/* (-------product info nav --------) */
+
+
+
+.addproducts__info-nav-active-item::before {
+  border-bottom-right-radius: 16px;
+}
+
+
+
+
+/* (-------- products info description part---------) */
+
+.addproducts__info-custom-input input,
+.addproducts__info-custom-input textarea {
+  padding-left: 25px;
+  padding-right: 0;
+}
+
+.addproducts__info-custom-input textarea {
+  padding-left: 5px;
+  padding-right: 0;
+}
+
+/* (---------- products info tecnologies part --------) */
+
+
+.addproducts__tech-inputbox {
+
+  margin-right: 23px;
+  margin-left: 0;
+}
+
+.addproducts__tech-inputbox:last-child {
+  margin-right: 0;
+}
+
+
+.addproducts__tech-inputbox input {
+  padding-left: 12px;
+  padding-right: 0;
+}
+
+.addproducts__tech-inputbox-size input {
+  margin-right: 9px;
+  margin-left: 0;
+}
+
+.addproducts__tech-inputbox-size input:last-child {
+  margin-right: 0;
+}
+
+.addproducts__tech-inputbox-weight input {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+/* (---------add products upload files part-------) */
+
+
+.addproducts__upload-files-box {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.addproducts__upload-files-box:last-child {
+  margin-right: 0;
+}
+
+
+
+
+.addproducts__upload-files-box .image-preview i {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/* (----- package part ----) */
+
+
+
+
+
+
+
+/* End add products info */
+
+/* ================ End add product page ========================= */
+
+/* ================= Start manage about us ===================== */
+
+
+
+
+/* (------manage about table---------) */
+
+
+
+
+
+.manage-about-us__table thead th:first-of-type,
+.manage-about-us__table tbody td:first-of-type {
+  padding-left: 40px;
+  padding-right: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.manage-about-us__table thead th:last-of-type,
+.manage-about-us__table tbody td:last-of-type {
+  padding-right: 40px;
+  padding-left: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+/* ================= End manage about us ===================== */
+
+/* ===================== Start delete product page ======================*/
+
+
+.delete-product-box div a:first-of-type {
+  margin-right: 4px;
+  margin-left: 0;
+}
+
+.delete-product-box div a:last-of-type {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
+/* ===================== End delete product page ======================*/

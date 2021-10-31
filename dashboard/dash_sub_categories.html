@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <!-- font  awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <!-- ltr -->
+    <link rel="stylesheet" href="../css/dashboard_ltr.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body class='dashboard-body'>
+    <!--  Start dashboard   -->
+
+    <div class="container-fluid">
+        <div class="row dashboard">
+            <div class="col-lg-2 col-8 dashboard-right " id='dashboard-right'>
+                <div class="dashboard-logo text-center">
+                    <img src="../images/dash_logo.svg">
+                    <span>a@yahoo.gmail.com</span>
+                </div>
+                <hr>
+                <ul class="dashboard-right-list">
+                    <li><a href="#">
+                            <img src="../images/dash_icon_1.svg">
+                            <span>لوحة التحكم</span>
+                            <span></span>
+                        </a></li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/dash_icon_2.svg">
+                            <span>المتجر</span>
+                            <i class="fas fas fa-chevron-left"></i>
+                        </a>
+                        <ul class='dashboard-list-content'>
+                            <li><a href="#">الفئات الرئيسية</a></li>
+                            <li><a href="#">الفئات الفرعية</a></li>
+                            <li><a href="#">قائمة المنتجات</a></li>
+                            <li><a href="#">طلبات التسعير</a></li>
+                            <li><a href="#">طلبات الشراء</a></li>
+                            <li><a href="#">الشحن</a></li>
+                            <li><a href="#">الرمز الترويجي</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/dash_icon_3.svg">
+                            <span>المستخدمين</span>
+                            <i class="fas fas fa-chevron-left"></i>
+                        </a>
+                        <ul class='dashboard-list-content'>
+                            <li><a href="#">ادارة حسابات المستخدمين</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/dash_icon_4.svg">
+                            <span>إدارة صفحات الموقع</span>
+                            <i class="fas fas fa-chevron-left"></i>
+                        </a>
+                        <ul class='dashboard-list-content'>
+                            <li><a href="#">الرئيسية</a></li>
+                            <li><a href="#">الحلول</a></li>
+                            <li><a href="#">عن المؤسسة</a></li>
+                            <li><a href="#">اتصل بنا</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/dash_icon_5.svg">
+                            <span>السياسات</span>
+                            <i class="fas fas fa-chevron-left"></i>
+                        </a>
+                        <ul class='dashboard-list-content'>
+                            <li><a href="#">الاسترجاع والاستبدال</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">التسويق للموقع والمنتجات</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-xl-9 col-lg-10  col-12 dashboard-left ">
+                <div class="open-menu d-lg-none d-flex" id='open-menu'>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="dashboard-left-nav">
+                    <div class="dashboard-left-nav-content">
+                        <p>
+                            اهلا بك
+                            <span>لوحة التحكم</span>
+                        </p>
+                        <form action="" class='dash-nav-input-search'>
+                            <input type="text" placeholder="ابحث عن طلبك">
+                            <button type='submit'><i class='fas fa-search'></i></button>
+                        </form>
+                    </div>
+                    <div class="dash-latest-products-title d-flex justify-content-between mt-2">
+                        <span>إدارة الفئات الفرعية</span>
+                        <a href="#" class='sub-cate-add-new'>
+                            <i class="fas fa-plus"></i>
+                            <span>إنشاء جديد</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- sub table -->
+                <div class="sub-cates-table table-responsive">
+                    <table class='table'>
+                        <thead>
+                            <tr>
+                                <th>Kinden</th>
+                                <th>Kindar</th>
+                                <th>Kinden</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <!-- table row -->
+                            <tr>
+                                <td>Hand Held Two Way Radio</td>
+                                <td>راديو محمول اتجاهين</td>
+                                <td>Radio Communication</td>
+                                <td>
+                                    <div class="sub-cate-edit">
+                                        <a href="#"><i class="fas fa-pen"></i></a>
+                                        <a href="#">
+                                            <span class='d-lg-block d-none'>التفاصيل</span>
+                                            <i class="fas fa-info-circle d-lg-none d-block"></i>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <!-- table row -->
+                            <tr>
+                                <td>Mobile,Station And Repeater</td>
+                                <td>موبايل ومحطه ومكرر</td>
+                                <td>Radio Communication</td>
+                                <td>
+                                    <div class="sub-cate-edit">
+                                        <a href="#"><i class="fas fa-pen"></i></a>
+                                        <a href="#">
+                                            <span class='d-lg-block d-none'>التفاصيل</span>
+                                            <i class="fas fa-info-circle d-lg-none d-block"></i>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- table row -->
+                            <tr>
+                                <td>Radio Accesories</td>
+                                <td>مكملات لاسلكيه</td>
+                                <td>Radio Communication</td>
+                                <td>
+                                    <div class="sub-cate-edit">
+                                        <a href="#"><i class="fas fa-pen"></i></a>
+                                        <a href="#">
+                                            <span class='d-lg-block d-none'>التفاصيل</span>
+                                            <i class="fas fa-info-circle d-lg-none d-block"></i>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+
+
+                            <!-- table row -->
+                            <tr>
+                                <td>Hand Held</td>
+                                <td>محمول باليد</td>
+                                <td>Satelite Communication</td>
+                                <td>
+                                    <div class="sub-cate-edit">
+                                        <a href="#"><i class="fas fa-pen"></i></a>
+                                        <a href="#">
+                                            <span class='d-lg-block d-none'>التفاصيل</span>
+                                            <i class="fas fa-info-circle d-lg-none d-block"></i>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- table row -->
+                            <tr>
+                                <td>Mobile And Fixed</td>
+                                <td>موبايل وثابت</td>
+                                <td>Satelite Communication</td>
+                                <td>
+                                    <div class="sub-cate-edit">
+                                        <a href="#"><i class="fas fa-pen"></i></a>
+                                        <a href="#">
+                                            <span class='d-lg-block d-none'>التفاصيل</span>
+                                            <i class="fas fa-info-circle d-lg-none d-block"></i>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <!-- table row -->
+                            <tr>
+                                <td>Plans And Vouchers</td>
+                                <td>الخطط والقسائم</td>
+                                <td>Satelite Communication</td>
+                                <td>
+                                    <div class="sub-cate-edit">
+                                        <a href="#"><i class="fas fa-pen"></i></a>
+                                        <a href="#">
+                                            <span class='d-lg-block d-none'>التفاصيل</span>
+                                            <i class="fas fa-info-circle d-lg-none d-block"></i>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- table row -->
+                            <tr>
+                                <td>Satelite Accesories</td>
+                                <td>مكملات لاسلكيه</td>
+                                <td>Satelite Communication</td>
+                                <td>
+                                    <div class="sub-cate-edit">
+                                        <a href="#"><i class="fas fa-pen"></i></a>
+                                        <a href="#">
+                                            <span class='d-lg-block d-none'>التفاصيل</span>
+                                            <i class="fas fa-info-circle d-lg-none d-block"></i>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- table row -->
+                            <tr>
+                                <td>For Car</td>
+                                <td>للسياره</td>
+                                <td>Navigation</td>
+                                <td>
+                                    <div class="sub-cate-edit">
+                                        <a href="#"><i class="fas fa-pen"></i></a>
+                                        <a href="#">
+                                            <span class='d-lg-block d-none'>التفاصيل</span>
+                                            <i class="fas fa-info-circle d-lg-none d-block"></i>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <!-- table row -->
+                            <tr>
+                                <td>Marine</td>
+                                <td>للابحار</td>
+                                <td>Navigation</td>
+                                <td>
+                                    <div class="sub-cate-edit">
+                                        <a href="#"><i class="fas fa-pen"></i></a>
+                                        <a href="#">
+                                            <span class='d-lg-block d-none'>التفاصيل</span>
+                                            <i class="fas fa-info-circle d-lg-none d-block"></i>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <!-- table row -->
+                            <tr>
+                                <td>For Air</td>
+                                <td>للجو</td>
+                                <td>Navigation</td>
+                                <td>
+                                    <div class="sub-cate-edit">
+                                        <a href="#"><i class="fas fa-pen"></i></a>
+                                        <a href="#">
+                                            <span class='d-lg-block d-none'>التفاصيل</span>
+                                            <i class="fas fa-info-circle d-lg-none d-block"></i>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <!-- table row -->
+                            <tr>
+                                <td>Ais</td>
+                                <td>ا ى اس</td>
+                                <td>Navigation</td>
+                                <td>
+                                    <div class="sub-cate-edit">
+                                        <a href="#"><i class="fas fa-pen"></i></a>
+                                        <a href="#">
+                                            <span class='d-lg-block d-none'>التفاصيل</span>
+                                            <i class="fas fa-info-circle d-lg-none d-block"></i>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+
+</html>

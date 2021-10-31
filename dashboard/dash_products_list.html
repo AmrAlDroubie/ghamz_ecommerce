@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <!-- font  awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <!-- ltr -->
+    <link rel="stylesheet" href="../css/dashboard_ltr.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body class='dashboard-body'>
+
+
+    <div class="container-fluid">
+        <div class="row dashboard">
+            <div class="col-lg-2 col-8 dashboard-right " id='dashboard-right'>
+                <div class="dashboard-logo text-center">
+                    <img src="../images/dash_logo.svg">
+                    <span>a@yahoo.gmail.com</span>
+                </div>
+                <hr>
+                <ul class="dashboard-right-list">
+                    <li><a href="#">
+                            <img src="../images/dash_icon_1.svg">
+                            <span>لوحة التحكم</span>
+                            <span></span>
+                        </a></li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/dash_icon_2.svg">
+                            <span>المتجر</span>
+                            <i class="fas fas fa-chevron-left"></i>
+                        </a>
+                        <ul class='dashboard-list-content'>
+                            <li><a href="#">الفئات الرئيسية</a></li>
+                            <li><a href="#">الفئات الفرعية</a></li>
+                            <li><a href="#">قائمة المنتجات</a></li>
+                            <li><a href="#">طلبات التسعير</a></li>
+                            <li><a href="#">طلبات الشراء</a></li>
+                            <li><a href="#">الشحن</a></li>
+                            <li><a href="#">الرمز الترويجي</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/dash_icon_3.svg">
+                            <span>المستخدمين</span>
+                            <i class="fas fas fa-chevron-left"></i>
+                        </a>
+                        <ul class='dashboard-list-content'>
+                            <li><a href="#">ادارة حسابات المستخدمين</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/dash_icon_4.svg">
+                            <span>إدارة صفحات الموقع</span>
+                            <i class="fas fas fa-chevron-left"></i>
+                        </a>
+                        <ul class='dashboard-list-content'>
+                            <li><a href="#">الرئيسية</a></li>
+                            <li><a href="#">الحلول</a></li>
+                            <li><a href="#">عن المؤسسة</a></li>
+                            <li><a href="#">اتصل بنا</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/dash_icon_5.svg">
+                            <span>السياسات</span>
+                            <i class="fas fas fa-chevron-left"></i>
+                        </a>
+                        <ul class='dashboard-list-content'>
+                            <li><a href="#">الاسترجاع والاستبدال</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">التسويق للموقع والمنتجات</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xl-9 col-lg-10 col-12 dashboard-left">
+                <div class="open-menu d-lg-none d-flex" id='open-menu'>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="dashboard-left-nav">
+                    <div class="dashboard-left-nav-content">
+                        <p>
+                            اهلا بك
+                            <span>لوحة التحكم</span>
+                        </p>
+                        <form action="" class='dash-nav-input-search'>
+                            <input type="text" placeholder="ابحث عن طلبك">
+                            <button type='submit'><i class='fas fa-search'></i></button>
+                        </form>
+                    </div>
+                    <p class='m-color mb-4'>
+                        قائمة المنتجات
+                    </p>
+                </div>
+
+                <div class="listproducts__search__add d-flex align-items-center flex-lg-row flex-column">
+                    <form action="" class="listproducts__search-input d-flex align-items-center">
+                        <input type="text" placeholder="الموديل">
+                        <button type='submit'><i class='fas fa-search'></i></button>
+                    </form>
+                    <a href="addproduct.html"
+                        class="listproducts__add-btn d-flex align-items-center justify-content-center mt-lg-0 mt-4 ms-auto me-lg-0 me-auto">
+                        <i class='fas fa-plus '></i>
+                        <span>إضافة منتجات</span>
+                    </a>
+                </div>
+
+                <div class="listproducts__table table-responsive mt-3">
+                    <table class='table listproducts__table-inner text-center'>
+                        <thead>
+                            <tr>
+                                <th>الموديل</th>
+                                <th>الماركة</th>
+                                <th>السعر</th>
+                                <th>id</th>
+                                <th>عرض المنتج</th>
+                                <th>إرسال الإشارات</th>
+                                <th>القناة</th>
+                                <th>مخزون</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- table row -->
+                            <tr>
+                                <td>المنتج</td>
+                                <td>54</td>
+                                <td>500$</td>
+                                <td>652654</td>
+                                <td>
+                                    <form action="">
+                                        <input type="checkbox" name="" id="" disabled checked>
+                                    </form>
+                                </td>
+                                <td>يوجد</td>
+                                <td>لا يوجد</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="listproducts__table-inner-edit-btns d-flex align-items-center">
+                                        <a href="#">
+                                            <i class='fas fa-pen'></i>
+                                            <span>تحديث</span>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- table row -->
+                            <tr>
+                                <td>المنتج</td>
+                                <td>54</td>
+                                <td>500$</td>
+                                <td>652654</td>
+                                <td>
+                                    <form action="">
+                                        <input type="checkbox" name="" id="" disabled checked>
+                                    </form>
+                                </td>
+                                <td>يوجد</td>
+                                <td>لا يوجد</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="listproducts__table-inner-edit-btns d-flex align-items-center">
+                                        <a href="#">
+                                            <i class='fas fa-pen'></i>
+                                            <span>تحديث</span>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- table row -->
+                            <tr>
+                                <td>المنتج</td>
+                                <td>54</td>
+                                <td>500$</td>
+                                <td>652654</td>
+                                <td>
+                                    <form action="">
+                                        <input type="checkbox" name="" id="" disabled>
+                                    </form>
+                                </td>
+                                <td>يوجد</td>
+                                <td>لا يوجد</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="listproducts__table-inner-edit-btns d-flex align-items-center">
+                                        <a href="#">
+                                            <i class='fas fa-pen'></i>
+                                            <span>تحديث</span>
+                                        </a>
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+
+</html>
