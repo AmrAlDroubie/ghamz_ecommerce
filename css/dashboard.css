@@ -22,7 +22,6 @@ html {
 }
 body {
   overflow-x: hidden !important;
-  min-height: 3000px;
 }
 
 a {
@@ -251,6 +250,17 @@ a {
   -ms-border-radius: 23px;
   -o-border-radius: 23px;
   padding-top: 10px;
+  overflow-y:auto;
+}
+
+.latest-orders-box::-webkit-scrollbar{
+  background:rgb(189, 188, 188);
+  width:8px;
+
+}
+
+.latest-orders-box::-webkit-scrollbar-thumb{
+  background:#0e2978;
 }
 
 .latest-orders-title {
