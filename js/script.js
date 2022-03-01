@@ -125,7 +125,7 @@ footer.innerHTML = `
 <!-- End footer -->
 `;
 body.append(footer);
-nav.innerHTML = null;
+
 
 // End footer
 
@@ -192,5 +192,3 @@ $(".all-sections button , .products-brand button , .offers-products button").on(
     e.preventDefault();
 })
 
-nav.innerHTML=null;
-footer.innerHTML = null;
